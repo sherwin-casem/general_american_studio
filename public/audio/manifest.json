@@ -1,6 +1,6 @@
 {
   "source": "Wikimedia Commons",
-  "generated": "2026-11-08T17:57:35.199Z",
+  "generated": "2026-11-08T18:46:18.368Z",
   "words": {
     "about": {
       "file": "audio/words/about.mp3",
@@ -186,6 +186,46 @@
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
       "page": "https://commons.wikimedia.org/wiki/File:En-us-bed.ogg"
     },
+    "beer": {
+      "file": "audio/words/beer.ogg",
+      "title": "File:En-us-beer.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-beer.ogg"
+    },
+    "begin": {
+      "file": "audio/words/begin.ogg",
+      "title": "File:En-us-begin.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-begin.ogg"
+    },
+    "behind": {
+      "file": "audio/words/behind.mp3",
+      "title": "File:En-us-behind.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-behind.ogg"
+    },
+    "below": {
+      "file": "audio/words/below.ogg",
+      "title": "File:En-us-below.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-below.ogg"
+    },
+    "berry": {
+      "file": "audio/words/berry.ogg",
+      "title": "File:En-us-berry.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-berry.ogg"
+    },
     "best": {
       "file": "audio/words/best.ogg",
       "title": "File:En-us-best.ogg",
@@ -202,6 +242,14 @@
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
       "page": "https://commons.wikimedia.org/wiki/File:En-us-bet.ogg"
     },
+    "better": {
+      "file": "audio/words/better.ogg",
+      "title": "File:En-us-better.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-better.ogg"
+    },
     "big": {
       "file": "audio/words/big.ogg",
       "title": "File:En-us-big.ogg",
@@ -213,10 +261,50 @@
     "bin": {
       "file": "audio/words/bin.mp3",
       "title": "File:En-us-bin.ogg",
-      "author": "Unknown",
+      "author": "Muke",
       "license": "Public domain",
       "licenseUrl": "https://commons.wikimedia.org/",
       "page": "https://commons.wikimedia.org/wiki/File:En-us-bin.ogg"
+    },
+    "bird": {
+      "file": "audio/words/bird.ogg",
+      "title": "File:En-us-bird.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-bird.ogg"
+    },
+    "birthday": {
+      "file": "audio/words/birthday.ogg",
+      "title": "File:En-us-birthday.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-birthday.ogg"
+    },
+    "bite": {
+      "file": "audio/words/bite.ogg",
+      "title": "File:En-us-bite.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-bite.ogg"
+    },
+    "blow": {
+      "file": "audio/words/blow.ogg",
+      "title": "File:En-us-blow.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-blow.ogg"
+    },
+    "boat": {
+      "file": "audio/words/boat.ogg",
+      "title": "File:En-us-boat.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-boat.ogg"
     },
     "book": {
       "file": "audio/words/book.mp3",
@@ -226,6 +314,78 @@
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
       "page": "https://commons.wikimedia.org/wiki/File:En-us-book.ogg"
     },
+    "both": {
+      "file": "audio/words/both.ogg",
+      "title": "File:En-us-both.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-both.ogg"
+    },
+    "bought": {
+      "file": "audio/words/bought.mp3",
+      "title": "File:En-us-bought.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-bought.ogg"
+    },
+    "box": {
+      "file": "audio/words/box.ogg",
+      "title": "File:En-us-box.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-box.ogg"
+    },
+    "boy": {
+      "file": "audio/words/boy.ogg",
+      "title": "File:En-us-boy.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-boy.ogg"
+    },
+    "breathe": {
+      "file": "audio/words/breathe.mp3",
+      "title": "File:En-us-breathe.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-breathe.ogg"
+    },
+    "breeze": {
+      "file": "audio/words/breeze.ogg",
+      "title": "File:En-us-breeze.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-breeze.ogg"
+    },
+    "bridge": {
+      "file": "audio/words/bridge.ogg",
+      "title": "File:En-us-bridge.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-bridge.ogg"
+    },
+    "bud": {
+      "file": "audio/words/bud.mp3",
+      "title": "File:En-us-bud.ogg",
+      "author": "Neskaya",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-bud.ogg"
+    },
+    "budget": {
+      "file": "audio/words/budget.ogg",
+      "title": "File:En-us-budget.ogg",
+      "author": "Neoglitch",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-budget.ogg"
+    },
     "bull": {
       "file": "audio/words/bull.ogg",
       "title": "File:En-us-bull.ogg",
@@ -233,6 +393,30 @@
       "license": "CC BY-SA 3.0",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
       "page": "https://commons.wikimedia.org/wiki/File:En-us-bull.ogg"
+    },
+    "burn": {
+      "file": "audio/words/burn.ogg",
+      "title": "File:En-us-burn.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-burn.ogg"
+    },
+    "bus": {
+      "file": "audio/words/bus.ogg",
+      "title": "File:En-us-bus.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-bus.ogg"
+    },
+    "business": {
+      "file": "audio/words/business.ogg",
+      "title": "File:En-us-business.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-business.ogg"
     },
     "busy": {
       "file": "audio/words/busy.ogg",
@@ -250,6 +434,14 @@
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
       "page": "https://commons.wikimedia.org/wiki/File:En-us-buy.ogg"
     },
+    "buzz": {
+      "file": "audio/words/buzz.ogg",
+      "title": "File:En-us-buzz.ogg",
+      "author": "Sylvanmoon",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-buzz.ogg"
+    },
     "cab": {
       "file": "audio/words/cab.ogg",
       "title": "File:En-us-cab.ogg",
@@ -257,6 +449,14 @@
       "license": "CC BY-SA 3.0",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
       "page": "https://commons.wikimedia.org/wiki/File:En-us-cab.ogg"
+    },
+    "calendar": {
+      "file": "audio/words/calendar.ogg",
+      "title": "File:En-us-calendar.ogg",
+      "author": "Goshzilla",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-calendar.ogg"
     },
     "call": {
       "file": "audio/words/call.ogg",
@@ -282,6 +482,126 @@
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
       "page": "https://commons.wikimedia.org/wiki/File:En-us-cap.ogg"
     },
+    "car": {
+      "file": "audio/words/car.ogg",
+      "title": "File:En-us-car.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-car.ogg"
+    },
+    "care": {
+      "file": "audio/words/care.ogg",
+      "title": "File:En-us-care.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-care.ogg"
+    },
+    "career": {
+      "file": "audio/words/career.ogg",
+      "title": "File:En-us-career.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-career.ogg"
+    },
+    "cart": {
+      "file": "audio/words/cart.ogg",
+      "title": "File:En-us-cart.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-cart.ogg"
+    },
+    "cat": {
+      "file": "audio/words/cat.ogg",
+      "title": "File:En-us-cat.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-cat.ogg"
+    },
+    "caught": {
+      "file": "audio/words/caught.ogg",
+      "title": "File:En-us-caught.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-caught.ogg"
+    },
+    "chair": {
+      "file": "audio/words/chair.ogg",
+      "title": "File:En-us-chair.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-chair.ogg"
+    },
+    "change": {
+      "file": "audio/words/change.ogg",
+      "title": "File:En-us-change.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-change.ogg"
+    },
+    "check": {
+      "file": "audio/words/check.ogg",
+      "title": "File:En-us-check.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-check.ogg"
+    },
+    "chin": {
+      "file": "audio/words/chin.ogg",
+      "title": "File:En-us-chin.ogg",
+      "author": "Muke",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-chin.ogg"
+    },
+    "chip": {
+      "file": "audio/words/chip.ogg",
+      "title": "File:En-us-chip.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-chip.ogg"
+    },
+    "choice": {
+      "file": "audio/words/choice.ogg",
+      "title": "File:En-us-choice.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-choice.ogg"
+    },
+    "choose": {
+      "file": "audio/words/choose.ogg",
+      "title": "File:En-us-choose.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-choose.ogg"
+    },
+    "city": {
+      "file": "audio/words/city.ogg",
+      "title": "File:En-us-city.ogg",
+      "author": "Muke",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-city.ogg"
+    },
+    "claps": {
+      "file": "audio/words/claps.ogg",
+      "title": "File:En-us-claps.ogg",
+      "author": "LegionMammal978",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-claps.ogg"
+    },
     "class": {
       "file": "audio/words/class.ogg",
       "title": "File:En-us-class.ogg",
@@ -289,6 +609,30 @@
       "license": "CC BY-SA 3.0",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
       "page": "https://commons.wikimedia.org/wiki/File:En-us-class.ogg"
+    },
+    "clear": {
+      "file": "audio/words/clear.ogg",
+      "title": "File:En-us-clear.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-clear.ogg"
+    },
+    "client": {
+      "file": "audio/words/client.ogg",
+      "title": "File:En-us-client.ogg",
+      "author": "Neskaya",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-client.ogg"
+    },
+    "coal": {
+      "file": "audio/words/coal.ogg",
+      "title": "File:En-us-coal.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-coal.ogg"
     },
     "coat": {
       "file": "audio/words/coat.ogg",
@@ -298,6 +642,14 @@
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
       "page": "https://commons.wikimedia.org/wiki/File:En-us-coat.ogg"
     },
+    "coffee": {
+      "file": "audio/words/coffee.ogg",
+      "title": "File:En-us-coffee.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-coffee.ogg"
+    },
     "cold": {
       "file": "audio/words/cold.ogg",
       "title": "File:En-us-cold.ogg",
@@ -305,6 +657,30 @@
       "license": "CC BY-SA 3.0",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
       "page": "https://commons.wikimedia.org/wiki/File:En-us-cold.ogg"
+    },
+    "collapse": {
+      "file": "audio/words/collapse.ogg",
+      "title": "File:En-us-collapse.ogg",
+      "author": "Neskaya",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-collapse.ogg"
+    },
+    "collar": {
+      "file": "audio/words/collar.ogg",
+      "title": "File:En-us-collar.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-collar.ogg"
+    },
+    "collect": {
+      "file": "audio/words/collect.ogg",
+      "title": "File:En-us-collect.ogg",
+      "author": "Neskaya",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-collect.ogg"
     },
     "come": {
       "file": "audio/words/come.ogg",
@@ -314,6 +690,78 @@
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
       "page": "https://commons.wikimedia.org/wiki/File:En-us-come.ogg"
     },
+    "company": {
+      "file": "audio/words/company.ogg",
+      "title": "File:En-us-company.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-company.ogg"
+    },
+    "competition": {
+      "file": "audio/words/competition.ogg",
+      "title": "File:En-us-competition.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-competition.ogg"
+    },
+    "complete": {
+      "file": "audio/words/complete.ogg",
+      "title": "File:En-us-complete.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-complete.ogg"
+    },
+    "core": {
+      "file": "audio/words/core.ogg",
+      "title": "File:En-us-core.ogg",
+      "author": "Neskaya",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-core.ogg"
+    },
+    "correct": {
+      "file": "audio/words/correct.ogg",
+      "title": "File:En-us-correct.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-correct.ogg"
+    },
+    "cot": {
+      "file": "audio/words/cot.ogg",
+      "title": "File:En-us-cot.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-cot.ogg"
+    },
+    "could": {
+      "file": "audio/words/could.ogg",
+      "title": "File:En-us-could.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-could.ogg"
+    },
+    "court": {
+      "file": "audio/words/court.ogg",
+      "title": "File:En-us-court.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-court.ogg"
+    },
+    "cup": {
+      "file": "audio/words/cup.ogg",
+      "title": "File:En-us-cup.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-cup.ogg"
+    },
     "curl": {
       "file": "audio/words/curl.ogg",
       "title": "File:En-us-curl.ogg",
@@ -321,6 +769,22 @@
       "license": "CC BY-SA 3.0",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
       "page": "https://commons.wikimedia.org/wiki/File:En-us-curl.ogg"
+    },
+    "curve": {
+      "file": "audio/words/curve.ogg",
+      "title": "File:En-us-curve.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-curve.ogg"
+    },
+    "cut": {
+      "file": "audio/words/cut.ogg",
+      "title": "File:En-us-cut.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-cut.ogg"
     },
     "date": {
       "file": "audio/words/date.ogg",
@@ -330,13 +794,45 @@
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
       "page": "https://commons.wikimedia.org/wiki/File:En-us-date.ogg"
     },
+    "dawn": {
+      "file": "audio/words/dawn.ogg",
+      "title": "File:En-us-dawn.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-dawn.ogg"
+    },
     "day": {
       "file": "audio/words/day.ogg",
       "title": "File:En-us-day.ogg",
-      "author": "No machine-readable author provided. Dvortygirl assumed (based on copyright claims).",
+      "author": "Dvortygirl",
       "license": "CC BY-SA 3.0",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
       "page": "https://commons.wikimedia.org/wiki/File:En-us-day.ogg"
+    },
+    "debt": {
+      "file": "audio/words/debt.ogg",
+      "title": "File:En-us-debt.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-debt.ogg"
+    },
+    "decide": {
+      "file": "audio/words/decide.ogg",
+      "title": "File:En-us-decide.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-decide.ogg"
+    },
+    "decision": {
+      "file": "audio/words/decision.ogg",
+      "title": "File:En-us-decision.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-decision.ogg"
     },
     "den": {
       "file": "audio/words/den.ogg",
@@ -346,6 +842,22 @@
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
       "page": "https://commons.wikimedia.org/wiki/File:En-us-den.ogg"
     },
+    "design": {
+      "file": "audio/words/design.ogg",
+      "title": "File:En-us-design.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-design.ogg"
+    },
+    "develop": {
+      "file": "audio/words/develop.ogg",
+      "title": "File:En-us-develop.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-develop.ogg"
+    },
     "die": {
       "file": "audio/words/die.ogg",
       "title": "File:En-us-die.ogg",
@@ -353,6 +865,46 @@
       "license": "CC BY-SA 3.0",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
       "page": "https://commons.wikimedia.org/wiki/File:En-us-die.ogg"
+    },
+    "dinner": {
+      "file": "audio/words/dinner.ogg",
+      "title": "File:En-us-dinner.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-dinner.ogg"
+    },
+    "doctor": {
+      "file": "audio/words/doctor.ogg",
+      "title": "File:En-us-doctor.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-doctor.ogg"
+    },
+    "don": {
+      "file": "audio/words/don.ogg",
+      "title": "File:En-us-don.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-don.ogg"
+    },
+    "done": {
+      "file": "audio/words/done.ogg",
+      "title": "File:En-us-done.oga",
+      "author": "Muldoonsamuel55",
+      "license": "CC0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-done.oga"
+    },
+    "door": {
+      "file": "audio/words/door.ogg",
+      "title": "File:En-us-door.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-door.ogg"
     },
     "down": {
       "file": "audio/words/down.ogg",
@@ -370,6 +922,278 @@
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
       "page": "https://commons.wikimedia.org/wiki/File:En-us-dry.ogg"
     },
+    "ear": {
+      "file": "audio/words/ear.ogg",
+      "title": "File:En-us-ear.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-ear.ogg"
+    },
+    "easy": {
+      "file": "audio/words/easy.ogg",
+      "title": "File:En-us-easy.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-easy.ogg"
+    },
+    "eat": {
+      "file": "audio/words/eat.ogg",
+      "title": "File:En-us-eat.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-eat.ogg"
+    },
+    "economic": {
+      "file": "audio/words/economic.ogg",
+      "title": "File:En-us-economic.ogg",
+      "author": "Persent101",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-economic.ogg"
+    },
+    "economy": {
+      "file": "audio/words/economy.ogg",
+      "title": "File:En-us-economy.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-economy.ogg"
+    },
+    "eight": {
+      "file": "audio/words/eight.ogg",
+      "title": "File:En-us-eight.ogg",
+      "author": "TheDaveRoss",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-eight.ogg"
+    },
+    "eighty": {
+      "file": "audio/words/eighty.ogg",
+      "title": "File:En-us-eighty.ogg",
+      "author": "TheDaveRoss",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-eighty.ogg"
+    },
+    "email": {
+      "file": "audio/words/email.ogg",
+      "title": "File:En-us-email.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-email.ogg"
+    },
+    "engineer": {
+      "file": "audio/words/engineer.ogg",
+      "title": "File:En-us-engineer.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-engineer.ogg"
+    },
+    "english": {
+      "file": "audio/words/english.ogg",
+      "title": "File:En-us-english.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-english.ogg"
+    },
+    "enjoy": {
+      "file": "audio/words/enjoy.ogg",
+      "title": "File:En-us-enjoy.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-enjoy.ogg"
+    },
+    "enough": {
+      "file": "audio/words/enough.ogg",
+      "title": "File:En-us-enough.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-enough.ogg"
+    },
+    "estate": {
+      "file": "audio/words/estate.ogg",
+      "title": "File:En-us-estate.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-estate.ogg"
+    },
+    "esteem": {
+      "file": "audio/words/esteem.ogg",
+      "title": "File:En-us-esteem.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-esteem.ogg"
+    },
+    "explain": {
+      "file": "audio/words/explain.ogg",
+      "title": "File:En-us-explain.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-explain.ogg"
+    },
+    "extra": {
+      "file": "audio/words/extra.ogg",
+      "title": "File:En-us-extra.ogg",
+      "author": "TreeMama",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-extra.ogg"
+    },
+    "eye": {
+      "file": "audio/words/eye.ogg",
+      "title": "File:En-us-eye.ogg",
+      "author": "Muke",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-eye.ogg"
+    },
+    "eyes": {
+      "file": "audio/words/eyes.ogg",
+      "title": "File:En-us-eyes.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-eyes.ogg"
+    },
+    "fair": {
+      "file": "audio/words/fair.ogg",
+      "title": "File:En-us-fair.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-fair.ogg"
+    },
+    "far": {
+      "file": "audio/words/far.ogg",
+      "title": "File:En-us-far.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-far.ogg"
+    },
+    "farm": {
+      "file": "audio/words/farm.ogg",
+      "title": "File:En-us-farm.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-farm.ogg"
+    },
+    "fast": {
+      "file": "audio/words/fast.ogg",
+      "title": "File:En-us-fast.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-fast.ogg"
+    },
+    "father": {
+      "file": "audio/words/father.ogg",
+      "title": "File:En-us-father.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-father.ogg"
+    },
+    "fear": {
+      "file": "audio/words/fear.ogg",
+      "title": "File:En-us-fear.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-fear.ogg"
+    },
+    "feel": {
+      "file": "audio/words/feel.ogg",
+      "title": "File:En-us-feel.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-feel.ogg"
+    },
+    "ferry": {
+      "file": "audio/words/ferry.ogg",
+      "title": "File:En-us-ferry.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-ferry.ogg"
+    },
+    "few": {
+      "file": "audio/words/few.ogg",
+      "title": "File:En-us-few.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-few.ogg"
+    },
+    "file": {
+      "file": "audio/words/file.ogg",
+      "title": "File:En-us-file.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-file.ogg"
+    },
+    "fill": {
+      "file": "audio/words/fill.ogg",
+      "title": "File:En-us-fill.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-fill.ogg"
+    },
+    "financial": {
+      "file": "audio/words/financial.ogg",
+      "title": "File:En-us-financial.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-financial.ogg"
+    },
+    "find": {
+      "file": "audio/words/find.ogg",
+      "title": "File:En-us-find.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-find.ogg"
+    },
+    "fine": {
+      "file": "audio/words/fine.ogg",
+      "title": "File:En-us-fine.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-fine.ogg"
+    },
+    "finger": {
+      "file": "audio/words/finger.ogg",
+      "title": "File:En-us-finger.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-finger.ogg"
+    },
+    "finish": {
+      "file": "audio/words/finish.ogg",
+      "title": "File:En-us-finish.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-finish.ogg"
+    },
     "first": {
       "file": "audio/words/first.ogg",
       "title": "File:En-us-first.ogg",
@@ -377,6 +1201,102 @@
       "license": "CC BY-SA 3.0",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
       "page": "https://commons.wikimedia.org/wiki/File:En-us-first.ogg"
+    },
+    "five": {
+      "file": "audio/words/five.ogg",
+      "title": "File:En-us-five.ogg",
+      "author": "Dvortygirl",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-five.ogg"
+    },
+    "fly": {
+      "file": "audio/words/fly.ogg",
+      "title": "File:En-us-fly.ogg",
+      "author": "Dvortygirl",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-fly.ogg"
+    },
+    "foil": {
+      "file": "audio/words/foil.ogg",
+      "title": "File:En-us-foil.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-foil.ogg"
+    },
+    "fond": {
+      "file": "audio/words/fond.ogg",
+      "title": "File:En-us-fond.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-fond.ogg"
+    },
+    "for": {
+      "file": "audio/words/for.ogg",
+      "title": "File:En-us-for.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-for.ogg"
+    },
+    "form": {
+      "file": "audio/words/form.ogg",
+      "title": "File:En-us-form.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-form.ogg"
+    },
+    "found": {
+      "file": "audio/words/found.ogg",
+      "title": "File:En-us-found.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-found.ogg"
+    },
+    "four": {
+      "file": "audio/words/four.ogg",
+      "title": "File:En-us-four.ogg",
+      "author": "Dvortygirl",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-four.ogg"
+    },
+    "fry": {
+      "file": "audio/words/fry.ogg",
+      "title": "File:En-us-fry.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-fry.ogg"
+    },
+    "full": {
+      "file": "audio/words/full.ogg",
+      "title": "File:En-us-full.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-full.ogg"
+    },
+    "fun": {
+      "file": "audio/words/fun.ogg",
+      "title": "File:En-us-fun.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-fun.ogg"
+    },
+    "future": {
+      "file": "audio/words/future.ogg",
+      "title": "File:En-us-future.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-future.ogg"
     },
     "game": {
       "file": "audio/words/game.ogg",
@@ -386,6 +1306,14 @@
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
       "page": "https://commons.wikimedia.org/wiki/File:En-us-game.ogg"
     },
+    "gate": {
+      "file": "audio/words/gate.ogg",
+      "title": "File:En-us-gate.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-gate.ogg"
+    },
     "get": {
       "file": "audio/words/get.ogg",
       "title": "File:En-us-get.ogg",
@@ -393,6 +1321,14 @@
       "license": "CC BY-SA 3.0",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
       "page": "https://commons.wikimedia.org/wiki/File:En-us-get.ogg"
+    },
+    "gin": {
+      "file": "audio/words/gin.ogg",
+      "title": "File:En-us-gin.ogg",
+      "author": "Muke",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-gin.ogg"
     },
     "girl": {
       "file": "audio/words/girl.ogg",
@@ -405,7 +1341,7 @@
     "give": {
       "file": "audio/words/give.ogg",
       "title": "File:En-us-give.ogg",
-      "author": "Unknown",
+      "author": "Muke",
       "license": "Public domain",
       "licenseUrl": "https://commons.wikimedia.org/",
       "page": "https://commons.wikimedia.org/wiki/File:En-us-give.ogg"
@@ -445,10 +1381,34 @@
     "good": {
       "file": "audio/words/good.ogg",
       "title": "File:En-us-good.ogg",
-      "author": "Unknown",
+      "author": "Dvortygirl",
       "license": "Public domain",
       "licenseUrl": "https://commons.wikimedia.org/",
       "page": "https://commons.wikimedia.org/wiki/File:En-us-good.ogg"
+    },
+    "green": {
+      "file": "audio/words/green.ogg",
+      "title": "File:En-us-green.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-green.ogg"
+    },
+    "grin": {
+      "file": "audio/words/grin.ogg",
+      "title": "File:En-us-grin.ogg",
+      "author": "Neskaya",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-grin.ogg"
+    },
+    "hair": {
+      "file": "audio/words/hair.ogg",
+      "title": "File:En-us-hair.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-hair.ogg"
     },
     "happy": {
       "file": "audio/words/happy.ogg",
@@ -458,21 +1418,237 @@
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
       "page": "https://commons.wikimedia.org/wiki/File:En-us-happy.ogg"
     },
+    "hard": {
+      "file": "audio/words/hard.ogg",
+      "title": "File:En-us-hard.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-hard.ogg"
+    },
+    "hat": {
+      "file": "audio/words/hat.ogg",
+      "title": "File:En-us-hat.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-hat.ogg"
+    },
+    "have": {
+      "file": "audio/words/have.ogg",
+      "title": "File:En-us-have.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-have.ogg"
+    },
+    "head": {
+      "file": "audio/words/head.ogg",
+      "title": "File:En-us-head.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-head.ogg"
+    },
+    "hear": {
+      "file": "audio/words/hear.ogg",
+      "title": "File:En-us-hear.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-hear.ogg"
+    },
+    "heard": {
+      "file": "audio/words/heard.ogg",
+      "title": "File:En-us-heard.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-heard.ogg"
+    },
+    "heart": {
+      "file": "audio/words/heart.ogg",
+      "title": "File:En-us-heart.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-heart.ogg"
+    },
+    "heat": {
+      "file": "audio/words/heat.ogg",
+      "title": "File:En-us-heat.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-heat.ogg"
+    },
+    "hello": {
+      "file": "audio/words/hello.ogg",
+      "title": "File:En-us-hello.ogg",
+      "author": "Dvortygirl",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-hello.ogg"
+    },
     "help": {
       "file": "audio/words/help.ogg",
       "title": "File:En-us-help.ogg",
-      "author": "No machine-readable author provided. Dvortygirl assumed (based on copyright claims).",
+      "author": "Dvortygirl",
       "license": "CC BY-SA 3.0",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
       "page": "https://commons.wikimedia.org/wiki/File:En-us-help.ogg"
     },
+    "here": {
+      "file": "audio/words/here.ogg",
+      "title": "File:En-us-here.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-here.ogg"
+    },
+    "high": {
+      "file": "audio/words/high.ogg",
+      "title": "File:En-us-high.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-high.ogg"
+    },
+    "hit": {
+      "file": "audio/words/hit.ogg",
+      "title": "File:En-us-hit.ogg",
+      "author": "Muke",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-hit.ogg"
+    },
+    "hold": {
+      "file": "audio/words/hold.ogg",
+      "title": "File:En-us-hold.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-hold.ogg"
+    },
+    "home": {
+      "file": "audio/words/home.ogg",
+      "title": "File:En-us-home.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-home.ogg"
+    },
+    "hood": {
+      "file": "audio/words/hood.ogg",
+      "title": "File:En-us-hood.ogg",
+      "author": "Neskaya",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-hood.ogg"
+    },
+    "hot": {
+      "file": "audio/words/hot.ogg",
+      "title": "File:En-us-hot.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-hot.ogg"
+    },
+    "hotel": {
+      "file": "audio/words/hotel.ogg",
+      "title": "File:En-us-hotel.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-hotel.ogg"
+    },
+    "how": {
+      "file": "audio/words/how.ogg",
+      "title": "File:En-us-how.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-how.ogg"
+    },
+    "hurt": {
+      "file": "audio/words/hurt.ogg",
+      "title": "File:En-us-hurt.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-hurt.ogg"
+    },
+    "hut": {
+      "file": "audio/words/hut.ogg",
+      "title": "File:En-us-hut.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-hut.ogg"
+    },
+    "ice": {
+      "file": "audio/words/ice.ogg",
+      "title": "File:En-us-ice.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-ice.ogg"
+    },
     "idea": {
       "file": "audio/words/idea.ogg",
       "title": "File:En-us-idea.ogg",
-      "author": "recorded by Dvortygirl",
+      "author": "Dvortygirl",
       "license": "CC BY-SA 3.0",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
       "page": "https://commons.wikimedia.org/wiki/File:En-us-idea.ogg"
+    },
+    "information": {
+      "file": "audio/words/information.ogg",
+      "title": "File:En-us-information.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-information.ogg"
+    },
+    "invoice": {
+      "file": "audio/words/invoice.ogg",
+      "title": "File:En-us-invoice.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-invoice.ogg"
+    },
+    "is": {
+      "file": "audio/words/is.ogg",
+      "title": "File:En-us-is.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-is.ogg"
+    },
+    "it": {
+      "file": "audio/words/it.ogg",
+      "title": "File:En-us-it.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-it.ogg"
+    },
+    "jam": {
+      "file": "audio/words/jam.ogg",
+      "title": "File:En-us-jam.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-jam.ogg"
+    },
+    "jeep": {
+      "file": "audio/words/jeep.ogg",
+      "title": "File:En-ca-jeep.oga",
+      "author": "K6ka",
+      "license": "CC0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "page": "https://commons.wikimedia.org/wiki/File:En-ca-jeep.oga"
     },
     "job": {
       "file": "audio/words/job.ogg",
@@ -482,6 +1658,30 @@
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
       "page": "https://commons.wikimedia.org/wiki/File:En-us-job.ogg"
     },
+    "join": {
+      "file": "audio/words/join.ogg",
+      "title": "File:En-us-join.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-join.ogg"
+    },
+    "joke": {
+      "file": "audio/words/joke.ogg",
+      "title": "File:En-us-joke.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-joke.ogg"
+    },
+    "just": {
+      "file": "audio/words/just.ogg",
+      "title": "File:En-us-just.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-just.ogg"
+    },
     "key": {
       "file": "audio/words/key.ogg",
       "title": "File:En-us-key.ogg",
@@ -490,6 +1690,30 @@
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
       "page": "https://commons.wikimedia.org/wiki/File:En-us-key.ogg"
     },
+    "know": {
+      "file": "audio/words/know.ogg",
+      "title": "File:En-us-know.ogg",
+      "author": "Dvortygirl",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-know.ogg"
+    },
+    "lack": {
+      "file": "audio/words/lack.ogg",
+      "title": "File:En-us-lack.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-lack.ogg"
+    },
+    "large": {
+      "file": "audio/words/large.ogg",
+      "title": "File:En-us-large.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-large.ogg"
+    },
     "late": {
       "file": "audio/words/late.ogg",
       "title": "File:En-us-late.ogg",
@@ -497,6 +1721,62 @@
       "license": "CC BY-SA 3.0",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
       "page": "https://commons.wikimedia.org/wiki/File:En-us-late.ogg"
+    },
+    "law": {
+      "file": "audio/words/law.ogg",
+      "title": "File:En-us-law.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-law.ogg"
+    },
+    "leaf": {
+      "file": "audio/words/leaf.ogg",
+      "title": "File:En-us-leaf.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-leaf.ogg"
+    },
+    "learn": {
+      "file": "audio/words/learn.ogg",
+      "title": "File:En-us-learn.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-learn.ogg"
+    },
+    "leave": {
+      "file": "audio/words/leave.ogg",
+      "title": "File:En-us-leave.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-leave.ogg"
+    },
+    "let": {
+      "file": "audio/words/let.ogg",
+      "title": "File:En-us-let.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-let.ogg"
+    },
+    "light": {
+      "file": "audio/words/light.ogg",
+      "title": "File:En-us-light.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-light.ogg"
+    },
+    "load": {
+      "file": "audio/words/load.ogg",
+      "title": "File:En-us-load.ogg",
+      "author": "Sylvanmoon",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-load.ogg"
     },
     "lock": {
       "file": "audio/words/lock.ogg",
@@ -514,6 +1794,230 @@
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
       "page": "https://commons.wikimedia.org/wiki/File:En-us-log.ogg"
     },
+    "long": {
+      "file": "audio/words/long.ogg",
+      "title": "File:En-us-long.ogg",
+      "author": "Muke",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-long.ogg"
+    },
+    "low": {
+      "file": "audio/words/low.ogg",
+      "title": "File:En-us-low.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-low.ogg"
+    },
+    "luck": {
+      "file": "audio/words/luck.ogg",
+      "title": "File:En-us-luck.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-luck.ogg"
+    },
+    "lunch": {
+      "file": "audio/words/lunch.ogg",
+      "title": "File:En-us-lunch.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-lunch.ogg"
+    },
+    "mail": {
+      "file": "audio/words/mail.ogg",
+      "title": "File:En-us-mail.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-mail.ogg"
+    },
+    "main": {
+      "file": "audio/words/main.ogg",
+      "title": "File:En-us-main.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-main.ogg"
+    },
+    "man": {
+      "file": "audio/words/man.ogg",
+      "title": "File:En-us-man.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-man.ogg"
+    },
+    "manager": {
+      "file": "audio/words/manager.ogg",
+      "title": "File:En-us-manager.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-manager.ogg"
+    },
+    "many": {
+      "file": "audio/words/many.ogg",
+      "title": "File:En-us-many.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-many.ogg"
+    },
+    "map": {
+      "file": "audio/words/map.ogg",
+      "title": "File:En-us-map.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-map.ogg"
+    },
+    "market": {
+      "file": "audio/words/market.ogg",
+      "title": "File:En-us-market.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-market.ogg"
+    },
+    "mash": {
+      "file": "audio/words/mash.ogg",
+      "title": "File:En-us-mash.ogg",
+      "author": "Sylvanmoon",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-mash.ogg"
+    },
+    "mass": {
+      "file": "audio/words/mass.ogg",
+      "title": "File:En-us-mass.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-mass.ogg"
+    },
+    "me": {
+      "file": "audio/words/me.ogg",
+      "title": "File:En-us-me.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-me.ogg"
+    },
+    "measure": {
+      "file": "audio/words/measure.ogg",
+      "title": "File:En-us-measure.ogg",
+      "author": "Muke",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-measure.ogg"
+    },
+    "meeting": {
+      "file": "audio/words/meeting.ogg",
+      "title": "File:En-us-meeting.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-meeting.ogg"
+    },
+    "men": {
+      "file": "audio/words/men.ogg",
+      "title": "File:En-us-men.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-men.ogg"
+    },
+    "monday": {
+      "file": "audio/words/monday.ogg",
+      "title": "File:En-us-Monday.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-Monday.ogg"
+    },
+    "money": {
+      "file": "audio/words/money.ogg",
+      "title": "File:En-us-money.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-money.ogg"
+    },
+    "month": {
+      "file": "audio/words/month.ogg",
+      "title": "File:En-us-month.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-month.ogg"
+    },
+    "more": {
+      "file": "audio/words/more.ogg",
+      "title": "File:En-us-more.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-more.ogg"
+    },
+    "morning": {
+      "file": "audio/words/morning.ogg",
+      "title": "File:En-us-morning.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-morning.ogg"
+    },
+    "mother": {
+      "file": "audio/words/mother.ogg",
+      "title": "File:En-us-mother.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-mother.ogg"
+    },
+    "much": {
+      "file": "audio/words/much.ogg",
+      "title": "File:En-us-much.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-much.ogg"
+    },
+    "my": {
+      "file": "audio/words/my.ogg",
+      "title": "File:En-us-my.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-my.ogg"
+    },
+    "nail": {
+      "file": "audio/words/nail.ogg",
+      "title": "File:En-us-nail.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-nail.ogg"
+    },
+    "name": {
+      "file": "audio/words/name.ogg",
+      "title": "File:En-us-name.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-name.ogg"
+    },
+    "near": {
+      "file": "audio/words/near.ogg",
+      "title": "File:En-us-near.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-near.ogg"
+    },
     "need": {
       "file": "audio/words/need.ogg",
       "title": "File:En-us-need.ogg",
@@ -522,13 +2026,149 @@
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
       "page": "https://commons.wikimedia.org/wiki/File:En-us-need.ogg"
     },
+    "never": {
+      "file": "audio/words/never.ogg",
+      "title": "File:En-us-never.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-never.ogg"
+    },
+    "new": {
+      "file": "audio/words/new.ogg",
+      "title": "File:En-us-new.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-new.ogg"
+    },
+    "no": {
+      "file": "audio/words/no.ogg",
+      "title": "File:En-us-no.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-no.ogg"
+    },
+    "not": {
+      "file": "audio/words/not.ogg",
+      "title": "File:En-us-not.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-not.ogg"
+    },
+    "note": {
+      "file": "audio/words/note.ogg",
+      "title": "File:En-us-note.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-note.ogg"
+    },
+    "now": {
+      "file": "audio/words/now.ogg",
+      "title": "File:En-us-now.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-now.ogg"
+    },
     "number": {
       "file": "audio/words/number.ogg",
       "title": "File:En-us-number.ogg",
-      "author": "recorded by Dvortygirl",
+      "author": "Dvortygirl",
       "license": "CC BY-SA 3.0",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
       "page": "https://commons.wikimedia.org/wiki/File:En-us-number.ogg"
+    },
+    "odd": {
+      "file": "audio/words/odd.ogg",
+      "title": "File:En-us-odd.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-odd.ogg"
+    },
+    "office": {
+      "file": "audio/words/office.ogg",
+      "title": "File:En-us-office.ogg",
+      "author": "Dvortygirl",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-office.ogg"
+    },
+    "old": {
+      "file": "audio/words/old.ogg",
+      "title": "File:En-us-old.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-old.ogg"
+    },
+    "one": {
+      "file": "audio/words/one.ogg",
+      "title": "File:En-us-one.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-one.ogg"
+    },
+    "open": {
+      "file": "audio/words/open.ogg",
+      "title": "File:En-us-open.ogg",
+      "author": "TheDaveRoss",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-open.ogg"
+    },
+    "opportunity": {
+      "file": "audio/words/opportunity.ogg",
+      "title": "File:En-us-opportunity.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-opportunity.ogg"
+    },
+    "option": {
+      "file": "audio/words/option.ogg",
+      "title": "File:En-us-option.ogg",
+      "author": "Sylvanmoon",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-option.ogg"
+    },
+    "out": {
+      "file": "audio/words/out.ogg",
+      "title": "File:En-us-out.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-out.ogg"
+    },
+    "over": {
+      "file": "audio/words/over.ogg",
+      "title": "File:En-us-over.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-over.ogg"
+    },
+    "pain": {
+      "file": "audio/words/pain.ogg",
+      "title": "File:En-us-pain.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-pain.ogg"
+    },
+    "pan": {
+      "file": "audio/words/pan.ogg",
+      "title": "File:En-us-pan.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-pan.ogg"
     },
     "paper": {
       "file": "audio/words/paper.ogg",
@@ -537,6 +2177,22 @@
       "license": "CC BY-SA 3.0",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
       "page": "https://commons.wikimedia.org/wiki/File:En-us-paper.ogg"
+    },
+    "parade": {
+      "file": "audio/words/parade.ogg",
+      "title": "File:En-us-parade.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-parade.ogg"
+    },
+    "part": {
+      "file": "audio/words/part.ogg",
+      "title": "File:En-us-part.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-part.ogg"
     },
     "pat": {
       "file": "audio/words/pat.ogg",
@@ -570,6 +2226,46 @@
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
       "page": "https://commons.wikimedia.org/wiki/File:En-us-people.ogg"
     },
+    "perhaps": {
+      "file": "audio/words/perhaps.ogg",
+      "title": "File:En-us-perhaps.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-perhaps.ogg"
+    },
+    "person": {
+      "file": "audio/words/person.ogg",
+      "title": "File:En-us-person.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-person.ogg"
+    },
+    "phone": {
+      "file": "audio/words/phone.ogg",
+      "title": "File:En-us-phone.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-phone.ogg"
+    },
+    "photograph": {
+      "file": "audio/words/photograph.ogg",
+      "title": "File:En-us-photograph.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-photograph.ogg"
+    },
+    "photography": {
+      "file": "audio/words/photography.ogg",
+      "title": "File:En-us-photography.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-photography.ogg"
+    },
     "pick": {
       "file": "audio/words/pick.ogg",
       "title": "File:En-us-pick.ogg",
@@ -581,7 +2277,7 @@
     "pie": {
       "file": "audio/words/pie.ogg",
       "title": "File:En-us-pie.ogg",
-      "author": "No machine-readable author provided. Dvortygirl assumed (based on copyright claims).",
+      "author": "Dvortygirl",
       "license": "CC BY-SA 3.0",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
       "page": "https://commons.wikimedia.org/wiki/File:En-us-pie.ogg"
@@ -597,10 +2293,34 @@
     "pin": {
       "file": "audio/words/pin.ogg",
       "title": "File:En-us-pin.ogg",
-      "author": "Unknown",
+      "author": "Muke",
       "license": "Public domain",
       "licenseUrl": "https://commons.wikimedia.org/",
       "page": "https://commons.wikimedia.org/wiki/File:En-us-pin.ogg"
+    },
+    "place": {
+      "file": "audio/words/place.ogg",
+      "title": "File:En-us-place.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-place.ogg"
+    },
+    "plan": {
+      "file": "audio/words/plan.ogg",
+      "title": "File:En-us-plan.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-plan.ogg"
+    },
+    "play": {
+      "file": "audio/words/play.ogg",
+      "title": "File:En-us-play.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-play.ogg"
     },
     "played": {
       "file": "audio/words/played.ogg",
@@ -610,6 +2330,62 @@
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
       "page": "https://commons.wikimedia.org/wiki/File:En-us-played.ogg"
     },
+    "plays": {
+      "file": "audio/words/plays.ogg",
+      "title": "File:En-us-plays.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-plays.ogg"
+    },
+    "please": {
+      "file": "audio/words/please.ogg",
+      "title": "File:En-us-please.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-please.ogg"
+    },
+    "plight": {
+      "file": "audio/words/plight.ogg",
+      "title": "File:En-us-plight.ogg",
+      "author": "Neskaya",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-plight.ogg"
+    },
+    "point": {
+      "file": "audio/words/point.ogg",
+      "title": "File:En-us-point.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-point.ogg"
+    },
+    "pray": {
+      "file": "audio/words/pray.ogg",
+      "title": "File:En-us-pray.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-pray.ogg"
+    },
+    "prayed": {
+      "file": "audio/words/prayed.ogg",
+      "title": "File:En-us-prayed.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-prayed.ogg"
+    },
+    "presentation": {
+      "file": "audio/words/presentation.ogg",
+      "title": "File:En-us-presentation.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-presentation.ogg"
+    },
     "price": {
       "file": "audio/words/price.ogg",
       "title": "File:En-us-price.ogg",
@@ -617,6 +2393,46 @@
       "license": "CC BY-SA 3.0",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
       "page": "https://commons.wikimedia.org/wiki/File:En-us-price.ogg"
+    },
+    "prize": {
+      "file": "audio/words/prize.ogg",
+      "title": "File:En-us-prize.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-prize.ogg"
+    },
+    "problem": {
+      "file": "audio/words/problem.ogg",
+      "title": "File:En-us-problem.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-problem.ogg"
+    },
+    "product": {
+      "file": "audio/words/product.ogg",
+      "title": "File:En-us-product.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-product.ogg"
+    },
+    "proof": {
+      "file": "audio/words/proof.ogg",
+      "title": "File:En-us-proof.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-proof.ogg"
+    },
+    "prove": {
+      "file": "audio/words/prove.ogg",
+      "title": "File:En-us-prove.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-prove.ogg"
     },
     "pull": {
       "file": "audio/words/pull.ogg",
@@ -626,6 +2442,14 @@
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
       "page": "https://commons.wikimedia.org/wiki/File:En-us-pull.ogg"
     },
+    "put": {
+      "file": "audio/words/put.ogg",
+      "title": "File:En-us-put.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-put.ogg"
+    },
     "quick": {
       "file": "audio/words/quick.ogg",
       "title": "File:En-us-quick.ogg",
@@ -633,6 +2457,78 @@
       "license": "CC BY-SA 3.0",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
       "page": "https://commons.wikimedia.org/wiki/File:En-us-quick.ogg"
+    },
+    "ran": {
+      "file": "audio/words/ran.ogg",
+      "title": "File:En-us-ran.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-ran.ogg"
+    },
+    "rang": {
+      "file": "audio/words/rang.ogg",
+      "title": "File:En-us-rang.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-rang.ogg"
+    },
+    "really": {
+      "file": "audio/words/really.ogg",
+      "title": "File:En-us-really.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-really.ogg"
+    },
+    "red": {
+      "file": "audio/words/red.ogg",
+      "title": "File:En-us-red.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-red.ogg"
+    },
+    "reply": {
+      "file": "audio/words/reply.ogg",
+      "title": "File:En-us-reply.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-reply.ogg"
+    },
+    "report": {
+      "file": "audio/words/report.ogg",
+      "title": "File:En-us-report.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-report.ogg"
+    },
+    "return": {
+      "file": "audio/words/return.ogg",
+      "title": "File:En-us-return.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-return.ogg"
+    },
+    "rice": {
+      "file": "audio/words/rice.ogg",
+      "title": "File:En-us-rice.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-rice.ogg"
+    },
+    "rich": {
+      "file": "audio/words/rich.ogg",
+      "title": "File:En-us-rich.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-rich.ogg"
     },
     "ride": {
       "file": "audio/words/ride.ogg",
@@ -642,6 +2538,38 @@
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
       "page": "https://commons.wikimedia.org/wiki/File:En-us-ride.ogg"
     },
+    "ridge": {
+      "file": "audio/words/ridge.ogg",
+      "title": "File:En-us-ridge.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-ridge.ogg"
+    },
+    "right": {
+      "file": "audio/words/right.ogg",
+      "title": "File:En-us-right.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-right.ogg"
+    },
+    "rise": {
+      "file": "audio/words/rise.ogg",
+      "title": "File:En-us-rise.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-rise.ogg"
+    },
+    "road": {
+      "file": "audio/words/road.ogg",
+      "title": "File:En-us-road.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-road.ogg"
+    },
     "robe": {
       "file": "audio/words/robe.ogg",
       "title": "File:En-us-robe.ogg",
@@ -649,6 +2577,14 @@
       "license": "CC BY-SA 3.0",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
       "page": "https://commons.wikimedia.org/wiki/File:En-us-robe.ogg"
+    },
+    "rock": {
+      "file": "audio/words/rock.ogg",
+      "title": "File:En-us-rock.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-rock.ogg"
     },
     "rope": {
       "file": "audio/words/rope.ogg",
@@ -658,6 +2594,78 @@
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
       "page": "https://commons.wikimedia.org/wiki/File:En-us-rope.ogg"
     },
+    "run": {
+      "file": "audio/words/run.ogg",
+      "title": "File:En-us-run.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-run.ogg"
+    },
+    "sad": {
+      "file": "audio/words/sad.ogg",
+      "title": "File:En-us-sad.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-sad.ogg"
+    },
+    "safe": {
+      "file": "audio/words/safe.ogg",
+      "title": "File:En-us-safe.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-safe.ogg"
+    },
+    "said": {
+      "file": "audio/words/said.ogg",
+      "title": "File:En-us-said.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-said.ogg"
+    },
+    "sale": {
+      "file": "audio/words/sale.ogg",
+      "title": "File:En-us-sale.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-sale.ogg"
+    },
+    "save": {
+      "file": "audio/words/save.ogg",
+      "title": "File:En-us-save.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-save.ogg"
+    },
+    "saw": {
+      "file": "audio/words/saw.ogg",
+      "title": "File:En-us-saw.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-saw.ogg"
+    },
+    "say": {
+      "file": "audio/words/say.ogg",
+      "title": "File:En-us-say.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-say.ogg"
+    },
+    "school": {
+      "file": "audio/words/school.wav",
+      "title": "File:LL-Q1860 (eng)-Qwertygiy-school.wav",
+      "author": "Qwertygiy",
+      "license": "CC0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "page": "https://commons.wikimedia.org/wiki/File:LL-Q1860_(eng)-Qwertygiy-school.wav"
+    },
     "seat": {
       "file": "audio/words/seat.ogg",
       "title": "File:En-us-seat.ogg",
@@ -665,6 +2673,14 @@
       "license": "CC BY-SA 3.0",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
       "page": "https://commons.wikimedia.org/wiki/File:En-us-seat.ogg"
+    },
+    "see": {
+      "file": "audio/words/see.ogg",
+      "title": "File:En-us-see.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-see.ogg"
     },
     "seed": {
       "file": "audio/words/seed.ogg",
@@ -674,6 +2690,14 @@
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
       "page": "https://commons.wikimedia.org/wiki/File:En-us-seed.ogg"
     },
+    "sell": {
+      "file": "audio/words/sell.ogg",
+      "title": "File:En-us-sell.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-sell.ogg"
+    },
     "send": {
       "file": "audio/words/send.ogg",
       "title": "File:En-us-send.ogg",
@@ -681,6 +2705,286 @@
       "license": "CC BY-SA 3.0",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
       "page": "https://commons.wikimedia.org/wiki/File:En-us-send.ogg"
+    },
+    "seven": {
+      "file": "audio/words/seven.ogg",
+      "title": "File:En-us-seven.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-seven.ogg"
+    },
+    "share": {
+      "file": "audio/words/share.ogg",
+      "title": "File:En-us-share.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-share.ogg"
+    },
+    "shave": {
+      "file": "audio/words/shave.ogg",
+      "title": "File:En-us-shave.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-shave.ogg"
+    },
+    "she": {
+      "file": "audio/words/she.ogg",
+      "title": "File:En-us-she.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-she.ogg"
+    },
+    "sheep": {
+      "file": "audio/words/sheep.ogg",
+      "title": "File:En-us-sheep.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-sheep.ogg"
+    },
+    "sheet": {
+      "file": "audio/words/sheet.ogg",
+      "title": "File:En-us-sheet.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-sheet.ogg"
+    },
+    "shine": {
+      "file": "audio/words/shine.ogg",
+      "title": "File:En-us-shine.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-shine.ogg"
+    },
+    "ship": {
+      "file": "audio/words/ship.ogg",
+      "title": "File:En-us-ship.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-ship.ogg"
+    },
+    "shirt": {
+      "file": "audio/words/shirt.ogg",
+      "title": "File:En-us-shirt.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-shirt.ogg"
+    },
+    "shock": {
+      "file": "audio/words/shock.ogg",
+      "title": "File:En-us-shock.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-shock.ogg"
+    },
+    "short": {
+      "file": "audio/words/short.ogg",
+      "title": "File:En-us-short.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-short.ogg"
+    },
+    "show": {
+      "file": "audio/words/show.ogg",
+      "title": "File:En-us-show.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-show.ogg"
+    },
+    "sign": {
+      "file": "audio/words/sign.ogg",
+      "title": "File:En-us-sign.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-sign.ogg"
+    },
+    "sin": {
+      "file": "audio/words/sin.ogg",
+      "title": "File:En-us-sin.ogg",
+      "author": "Muke",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-sin.ogg"
+    },
+    "sing": {
+      "file": "audio/words/sing.ogg",
+      "title": "File:En-us-sing.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-sing.ogg"
+    },
+    "singer": {
+      "file": "audio/words/singer.ogg",
+      "title": "File:En-us-singer.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-singer.ogg"
+    },
+    "sink": {
+      "file": "audio/words/sink.ogg",
+      "title": "File:En-us-sink.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-sink.ogg"
+    },
+    "sit": {
+      "file": "audio/words/sit.ogg",
+      "title": "File:En-us-sit.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-sit.ogg"
+    },
+    "small": {
+      "file": "audio/words/small.ogg",
+      "title": "File:En-us-small.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-small.ogg"
+    },
+    "so": {
+      "file": "audio/words/so.ogg",
+      "title": "File:En-us-so.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-so.ogg"
+    },
+    "sock": {
+      "file": "audio/words/sock.ogg",
+      "title": "File:En-us-sock.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-sock.ogg"
+    },
+    "soon": {
+      "file": "audio/words/soon.ogg",
+      "title": "File:En-us-soon.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-soon.ogg"
+    },
+    "soot": {
+      "file": "audio/words/soot.ogg",
+      "title": "File:En-us-soot.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-soot.ogg"
+    },
+    "sorry": {
+      "file": "audio/words/sorry.ogg",
+      "title": "File:En-us-sorry.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-sorry.ogg"
+    },
+    "sort": {
+      "file": "audio/words/sort.ogg",
+      "title": "File:En-us-sort.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-sort.ogg"
+    },
+    "special": {
+      "file": "audio/words/special.ogg",
+      "title": "File:En-us-special.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-special.ogg"
+    },
+    "sport": {
+      "file": "audio/words/sport.ogg",
+      "title": "File:En-us-sport.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-sport.ogg"
+    },
+    "stalk": {
+      "file": "audio/words/stalk.ogg",
+      "title": "File:En-us-stalk.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-stalk.ogg"
+    },
+    "star": {
+      "file": "audio/words/star.ogg",
+      "title": "File:En-us-star.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-star.ogg"
+    },
+    "start": {
+      "file": "audio/words/start.ogg",
+      "title": "File:En-us-start.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-start.ogg"
+    },
+    "state": {
+      "file": "audio/words/state.ogg",
+      "title": "File:En-us-state.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-state.ogg"
+    },
+    "steam": {
+      "file": "audio/words/steam.ogg",
+      "title": "File:En-us-steam.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-steam.ogg"
+    },
+    "stewed": {
+      "file": "audio/words/stewed.wav",
+      "title": "File:LL-Q1860 (eng)-Persent101-stewed.wav",
+      "author": "Persent101",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "page": "https://commons.wikimedia.org/wiki/File:LL-Q1860_(eng)-Persent101-stewed.wav"
+    },
+    "stock": {
+      "file": "audio/words/stock.ogg",
+      "title": "File:En-us-stock.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-stock.ogg"
+    },
+    "stood": {
+      "file": "audio/words/stood.ogg",
+      "title": "File:En-us-stood.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-stood.ogg"
     },
     "stop": {
       "file": "audio/words/stop.ogg",
@@ -690,10 +2994,146 @@
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
       "page": "https://commons.wikimedia.org/wiki/File:En-us-stop.ogg"
     },
+    "store": {
+      "file": "audio/words/store.ogg",
+      "title": "File:En-us-store.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-store.ogg"
+    },
+    "strengths": {
+      "file": "audio/words/strengths.ogg",
+      "title": "File:En-us-strengths.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-strengths.ogg"
+    },
+    "success": {
+      "file": "audio/words/success.ogg",
+      "title": "File:En-us-success.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-success.ogg"
+    },
+    "sue": {
+      "file": "audio/words/sue.ogg",
+      "title": "File:En-us-sue.ogg",
+      "author": "Neskaya",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-sue.ogg"
+    },
+    "suit": {
+      "file": "audio/words/suit.ogg",
+      "title": "File:En-us-suit.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-suit.ogg"
+    },
+    "sum": {
+      "file": "audio/words/sum.ogg",
+      "title": "File:En-us-sum.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-sum.ogg"
+    },
+    "summer": {
+      "file": "audio/words/summer.ogg",
+      "title": "File:En-us-summer.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-summer.ogg"
+    },
+    "sun": {
+      "file": "audio/words/sun.ogg",
+      "title": "File:En-us-Sun.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-Sun.ogg"
+    },
+    "support": {
+      "file": "audio/words/support.ogg",
+      "title": "File:En-us-support.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-support.ogg"
+    },
+    "sure": {
+      "file": "audio/words/sure.ogg",
+      "title": "File:En-us-sure.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-sure.ogg"
+    },
+    "table": {
+      "file": "audio/words/table.ogg",
+      "title": "File:En-us-table.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-table.ogg"
+    },
+    "talk": {
+      "file": "audio/words/talk.ogg",
+      "title": "File:En-us-talk.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-talk.ogg"
+    },
+    "taste": {
+      "file": "audio/words/taste.ogg",
+      "title": "File:En-us-taste.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-taste.ogg"
+    },
+    "taught": {
+      "file": "audio/words/taught.ogg",
+      "title": "File:En-us-taught.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-taught.ogg"
+    },
+    "teacher": {
+      "file": "audio/words/teacher.ogg",
+      "title": "File:En-us-teacher.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-teacher.ogg"
+    },
+    "team": {
+      "file": "audio/words/team.ogg",
+      "title": "File:En-us-team.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-team.ogg"
+    },
+    "television": {
+      "file": "audio/words/television.ogg",
+      "title": "File:En-us-television.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-television.ogg"
+    },
     "tell": {
       "file": "audio/words/tell.ogg",
       "title": "File:En-us-tell.ogg",
-      "author": "recorded by Dvortygirl",
+      "author": "Dvortygirl",
       "license": "CC BY-SA 3.0",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
       "page": "https://commons.wikimedia.org/wiki/File:En-us-tell.ogg"
@@ -701,10 +3141,114 @@
     "ten": {
       "file": "audio/words/ten.ogg",
       "title": "File:En-us-ten.ogg",
-      "author": "No machine-readable author provided. TheDaveRoss assumed (based on copyright claims).",
+      "author": "TheDaveRoss",
       "license": "CC BY-SA 3.0",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
       "page": "https://commons.wikimedia.org/wiki/File:En-us-ten.ogg"
+    },
+    "test": {
+      "file": "audio/words/test.ogg",
+      "title": "File:En-us-test.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-test.ogg"
+    },
+    "thank": {
+      "file": "audio/words/thank.ogg",
+      "title": "File:En-us-thank.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-thank.ogg"
+    },
+    "thanks": {
+      "file": "audio/words/thanks.ogg",
+      "title": "File:En-us-thanks.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-thanks.ogg"
+    },
+    "then": {
+      "file": "audio/words/then.ogg",
+      "title": "File:En-us-then.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-then.ogg"
+    },
+    "there": {
+      "file": "audio/words/there.ogg",
+      "title": "File:En-us-there.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-there.ogg"
+    },
+    "they": {
+      "file": "audio/words/they.ogg",
+      "title": "File:En-us-they.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-they.ogg"
+    },
+    "thin": {
+      "file": "audio/words/thin.ogg",
+      "title": "File:En-us-thin.ogg",
+      "author": "Muke",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-thin.ogg"
+    },
+    "thing": {
+      "file": "audio/words/thing.ogg",
+      "title": "File:En-us-thing.ogg",
+      "author": "Muke",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-thing.ogg"
+    },
+    "think": {
+      "file": "audio/words/think.ogg",
+      "title": "File:En-us-think.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-think.ogg"
+    },
+    "this": {
+      "file": "audio/words/this.ogg",
+      "title": "File:En-us-this.ogg",
+      "author": "Muke",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-this.ogg"
+    },
+    "thought": {
+      "file": "audio/words/thought.ogg",
+      "title": "File:En-us-thought.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-thought.ogg"
+    },
+    "thousand": {
+      "file": "audio/words/thousand.ogg",
+      "title": "File:En-us-thousand.ogg",
+      "author": "TheDaveRoss",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-thousand.ogg"
+    },
+    "three": {
+      "file": "audio/words/three.ogg",
+      "title": "File:En-us-three.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-three.ogg"
     },
     "tie": {
       "file": "audio/words/tie.ogg",
@@ -722,6 +3266,54 @@
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
       "page": "https://commons.wikimedia.org/wiki/File:En-us-time.ogg"
     },
+    "tin": {
+      "file": "audio/words/tin.ogg",
+      "title": "File:En-us-tin.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-tin.ogg"
+    },
+    "today": {
+      "file": "audio/words/today.ogg",
+      "title": "File:En-us-today.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-today.ogg"
+    },
+    "together": {
+      "file": "audio/words/together.ogg",
+      "title": "File:En-us-together.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-together.ogg"
+    },
+    "tone": {
+      "file": "audio/words/tone.ogg",
+      "title": "File:En-us-tone.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-tone.ogg"
+    },
+    "top": {
+      "file": "audio/words/top.ogg",
+      "title": "File:En-us-top.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-top.ogg"
+    },
+    "tot": {
+      "file": "audio/words/tot.ogg",
+      "title": "File:En-us-tot.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-tot.ogg"
+    },
     "town": {
       "file": "audio/words/town.ogg",
       "title": "File:En-us-town.ogg",
@@ -730,6 +3322,46 @@
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
       "page": "https://commons.wikimedia.org/wiki/File:En-us-town.ogg"
     },
+    "toy": {
+      "file": "audio/words/toy.ogg",
+      "title": "File:En-us-toy.ogg",
+      "author": "Dvortygirl",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-toy.ogg"
+    },
+    "track": {
+      "file": "audio/words/track.ogg",
+      "title": "File:En-us-track.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-track.ogg"
+    },
+    "tree": {
+      "file": "audio/words/tree.ogg",
+      "title": "File:En-us-tree.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-tree.ogg"
+    },
+    "truck": {
+      "file": "audio/words/truck.ogg",
+      "title": "File:En-us-truck.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-truck.ogg"
+    },
+    "true": {
+      "file": "audio/words/true.ogg",
+      "title": "File:En-us-true.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-true.ogg"
+    },
     "try": {
       "file": "audio/words/try.ogg",
       "title": "File:En-us-try.ogg",
@@ -737,6 +3369,270 @@
       "license": "CC BY-SA 3.0",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
       "page": "https://commons.wikimedia.org/wiki/File:En-us-try.ogg"
+    },
+    "turn": {
+      "file": "audio/words/turn.ogg",
+      "title": "File:En-us-turn.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-turn.ogg"
+    },
+    "two": {
+      "file": "audio/words/two.ogg",
+      "title": "File:En-us-two.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-two.ogg"
+    },
+    "usual": {
+      "file": "audio/words/usual.ogg",
+      "title": "File:En-us-usual.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-usual.ogg"
+    },
+    "van": {
+      "file": "audio/words/van.ogg",
+      "title": "File:En-us-van.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-van.ogg"
+    },
+    "vast": {
+      "file": "audio/words/vast.ogg",
+      "title": "File:En-us-vast.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-vast.ogg"
+    },
+    "very": {
+      "file": "audio/words/very.ogg",
+      "title": "File:En-us-very.ogg",
+      "author": "Dvortygirl",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-very.ogg"
+    },
+    "vest": {
+      "file": "audio/words/vest.ogg",
+      "title": "File:En-us-vest.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-vest.ogg"
+    },
+    "video": {
+      "file": "audio/words/video.ogg",
+      "title": "File:En-us-video.ogg",
+      "author": "Spacecat2",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-video.ogg"
+    },
+    "view": {
+      "file": "audio/words/view.ogg",
+      "title": "File:En-us-view.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-view.ogg"
+    },
+    "vine": {
+      "file": "audio/words/vine.ogg",
+      "title": "File:En-us-vine.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-vine.ogg"
+    },
+    "vision": {
+      "file": "audio/words/vision.ogg",
+      "title": "File:En-us-vision.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-vision.ogg"
+    },
+    "visit": {
+      "file": "audio/words/visit.ogg",
+      "title": "File:En-us-visit.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-visit.ogg"
+    },
+    "voice": {
+      "file": "audio/words/voice.ogg",
+      "title": "File:En-us-voice.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-voice.ogg"
+    },
+    "vote": {
+      "file": "audio/words/vote.ogg",
+      "title": "File:En-us-vote.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-vote.ogg"
+    },
+    "wait": {
+      "file": "audio/words/wait.ogg",
+      "title": "File:En-us-wait.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-wait.ogg"
+    },
+    "walk": {
+      "file": "audio/words/walk.ogg",
+      "title": "File:En-us-walk.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-walk.ogg"
+    },
+    "ward": {
+      "file": "audio/words/ward.ogg",
+      "title": "File:En-us-ward.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-ward.ogg"
+    },
+    "wash": {
+      "file": "audio/words/wash.ogg",
+      "title": "File:En-us-wash.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-wash.ogg"
+    },
+    "watch": {
+      "file": "audio/words/watch.ogg",
+      "title": "File:En-us-watch.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-watch.ogg"
+    },
+    "water": {
+      "file": "audio/words/water.ogg",
+      "title": "File:En-us-water.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-water.ogg"
+    },
+    "we": {
+      "file": "audio/words/we.ogg",
+      "title": "File:En-us-we.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-we.ogg"
+    },
+    "weather": {
+      "file": "audio/words/weather.ogg",
+      "title": "File:En-us-weather.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-weather.ogg"
+    },
+    "week": {
+      "file": "audio/words/week.ogg",
+      "title": "File:En-us-week.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-week.ogg"
+    },
+    "west": {
+      "file": "audio/words/west.ogg",
+      "title": "File:En-us-west.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-west.ogg"
+    },
+    "wet": {
+      "file": "audio/words/wet.ogg",
+      "title": "File:En-us-wet.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-wet.ogg"
+    },
+    "where": {
+      "file": "audio/words/where.ogg",
+      "title": "File:En-us-where.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-where.ogg"
+    },
+    "who": {
+      "file": "audio/words/who.ogg",
+      "title": "File:En-us-who.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-who.ogg"
+    },
+    "win": {
+      "file": "audio/words/win.ogg",
+      "title": "File:En-us-win.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-win.ogg"
+    },
+    "wine": {
+      "file": "audio/words/wine.ogg",
+      "title": "File:En-us-wine.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-wine.ogg"
+    },
+    "wing": {
+      "file": "audio/words/wing.ogg",
+      "title": "File:En-us-wing.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-wing.ogg"
+    },
+    "woke": {
+      "file": "audio/words/woke.ogg",
+      "title": "File:En-us-woke.ogg",
+      "author": "Neskaya",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-woke.ogg"
+    },
+    "woman": {
+      "file": "audio/words/woman.ogg",
+      "title": "File:En-us-woman.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-woman.ogg"
+    },
+    "word": {
+      "file": "audio/words/word.ogg",
+      "title": "File:En-us-word.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-word.ogg"
     },
     "work": {
       "file": "audio/words/work.ogg",
@@ -754,6 +3650,14 @@
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
       "page": "https://commons.wikimedia.org/wiki/File:En-us-worked.ogg"
     },
+    "works": {
+      "file": "audio/words/works.ogg",
+      "title": "File:En-us-works.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-works.ogg"
+    },
     "write": {
       "file": "audio/words/write.ogg",
       "title": "File:En-us-write.ogg",
@@ -761,415 +3665,143 @@
       "license": "CC BY-SA 3.0",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
       "page": "https://commons.wikimedia.org/wiki/File:En-us-write.ogg"
+    },
+    "wrong": {
+      "file": "audio/words/wrong.ogg",
+      "title": "File:En-us-wrong.ogg",
+      "author": "Muke",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-wrong.ogg"
+    },
+    "yam": {
+      "file": "audio/words/yam.ogg",
+      "title": "File:En-us-yam.ogg",
+      "author": "Sylvanmoon",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-yam.ogg"
+    },
+    "year": {
+      "file": "audio/words/year.ogg",
+      "title": "File:En-us-year.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-year.ogg"
+    },
+    "yellow": {
+      "file": "audio/words/yellow.ogg",
+      "title": "File:En-us-yellow.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-yellow.ogg"
+    },
+    "yes": {
+      "file": "audio/words/yes.ogg",
+      "title": "File:En-us-yes.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-yes.ogg"
+    },
+    "yesterday": {
+      "file": "audio/words/yesterday.ogg",
+      "title": "File:En-us-yesterday.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-yesterday.ogg"
+    },
+    "yet": {
+      "file": "audio/words/yet.ogg",
+      "title": "File:En-us-yet.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-yet.ogg"
+    },
+    "yolk": {
+      "file": "audio/words/yolk.ogg",
+      "title": "File:En-us-yolk.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-yolk.ogg"
+    },
+    "you": {
+      "file": "audio/words/you.ogg",
+      "title": "File:En-us-you.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-you.ogg"
+    },
+    "zero": {
+      "file": "audio/words/zero.ogg",
+      "title": "File:En-us-zero.ogg",
+      "author": "TheDaveRoss",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-zero.ogg"
+    },
+    "zinc": {
+      "file": "audio/words/zinc.ogg",
+      "title": "File:En-us-zinc.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-zinc.ogg"
+    },
+    "zip": {
+      "file": "audio/words/zip.ogg",
+      "title": "File:En-us-zip.ogg",
+      "author": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-zip.ogg"
+    },
+    "zoo": {
+      "file": "audio/words/zoo.ogg",
+      "title": "File:En-us-zoo.ogg",
+      "author": "Neoglitch",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-zoo.ogg"
     }
   },
   "missing": [
     "pack",
     "dime",
-    "school",
-    "table",
-    "today",
-    "return",
-    "water",
-    "better",
-    "city",
-    "meeting",
     "football",
-    "eighty",
-    "fine",
-    "phone",
-    "office",
-    "coffee",
-    "enough",
-    "very",
-    "visit",
-    "video",
-    "over",
-    "seven",
-    "five",
-    "have",
     "fan",
-    "van",
-    "vine",
-    "few",
-    "view",
-    "fast",
-    "vast",
-    "ferry",
-    "safe",
-    "save",
-    "leaf",
-    "leave",
-    "proof",
-    "prove",
-    "think",
-    "three",
-    "thanks",
-    "month",
-    "birthday",
-    "both",
-    "this",
-    "they",
-    "there",
-    "mother",
-    "weather",
-    "breathe",
-    "thin",
-    "tin",
-    "tree",
-    "thank",
     "tank",
-    "sink",
-    "then",
-    "breeze",
-    "see",
-    "small",
-    "works",
-    "zero",
-    "easy",
-    "is",
-    "plays",
-    "please",
-    "sue",
-    "zoo",
     "sip",
-    "zip",
-    "zinc",
-    "bus",
-    "buzz",
-    "prize",
-    "place",
-    "ice",
-    "eyes",
-    "rice",
-    "rise",
-    "she",
-    "share",
-    "sure",
-    "special",
-    "option",
-    "finish",
-    "measure",
-    "usual",
-    "vision",
-    "decision",
-    "television",
     "casual",
-    "ship",
-    "sign",
-    "shine",
-    "shave",
-    "sock",
-    "shock",
-    "sheet",
-    "sort",
-    "short",
-    "mass",
-    "mash",
-    "check",
-    "change",
-    "choose",
-    "much",
-    "future",
-    "watch",
-    "just",
-    "join",
-    "large",
-    "bridge",
     "cheap",
-    "jeep",
     "choke",
-    "joke",
-    "chin",
-    "gin",
-    "rich",
-    "ridge",
     "badge",
-    "chair",
-    "wash",
-    "chip",
-    "me",
-    "more",
-    "summer",
-    "team",
-    "name",
-    "no",
-    "new",
-    "dinner",
-    "plan",
-    "sing",
-    "long",
-    "thing",
-    "morning",
-    "singer",
-    "finger",
-    "english",
-    "sin",
-    "win",
-    "wing",
-    "ran",
-    "rang",
     "ban",
-    "sum",
-    "sun",
-    "map",
     "nap",
-    "mail",
-    "nail",
-    "red",
-    "right",
-    "sorry",
-    "car",
-    "here",
-    "light",
-    "hello",
-    "feel",
-    "road",
-    "load",
-    "rock",
-    "pray",
-    "play",
-    "correct",
-    "collect",
-    "fry",
-    "fly",
-    "wrong",
-    "invoice",
-    "we",
-    "week",
-    "one",
-    "boat",
-    "vest",
-    "west",
-    "wine",
-    "berry",
-    "vote",
     "vet",
-    "wet",
-    "curve",
     "curb",
-    "yes",
-    "you",
-    "year",
-    "yellow",
-    "yesterday",
-    "hat",
-    "home",
-    "who",
-    "behind",
-    "perhaps",
-    "yet",
     "jet",
-    "yam",
-    "jam",
-    "yolk",
-    "ear",
-    "high",
-    "eye",
-    "hold",
-    "old",
-    "heart",
-    "sheep",
-    "email",
-    "sit",
-    "business",
-    "fill",
-    "heat",
-    "hit",
     "tim",
-    "eat",
-    "it",
-    "green",
-    "grin",
-    "wait",
-    "eight",
-    "let",
-    "test",
-    "head",
-    "never",
-    "pain",
-    "sale",
-    "sell",
-    "taste",
-    "main",
-    "men",
-    "gate",
-    "debt",
-    "cat",
-    "manager",
-    "many",
-    "said",
-    "cup",
-    "budget",
-    "monday",
-    "lunch",
-    "done",
-    "money",
-    "man",
-    "cut",
-    "pan",
-    "sad",
-    "run",
-    "track",
-    "truck",
-    "lack",
-    "luck",
-    "problem",
-    "support",
-    "company",
-    "bird",
-    "learn",
-    "turn",
-    "person",
-    "teacher",
-    "doctor",
-    "together",
-    "hurt",
-    "hut",
-    "bud",
-    "walk",
-    "shirt",
-    "word",
-    "ward",
-    "burn",
     "barn",
-    "heard",
-    "hard",
     "food",
-    "soon",
     "do",
-    "true",
-    "two",
     "look",
-    "put",
-    "could",
-    "full",
-    "woman",
     "pool",
     "fool",
     "luke",
-    "suit",
-    "soot",
     "who'd",
-    "hood",
-    "stewed",
-    "stood",
-    "know",
-    "open",
-    "show",
-    "bought",
-    "low",
-    "law",
-    "so",
-    "saw",
-    "fun",
-    "woke",
-    "coal",
-    "note",
-    "not",
-    "hot",
-    "father",
-    "box",
-    "talk",
-    "thought",
-    "cot",
-    "caught",
-    "don",
-    "dawn",
-    "stock",
-    "stalk",
-    "collar",
     "caller",
-    "tot",
-    "taught",
-    "odd",
     "awed",
-    "my",
-    "find",
-    "now",
-    "how",
-    "out",
-    "thousand",
-    "boy",
-    "point",
-    "choice",
-    "enjoy",
-    "voice",
-    "toy",
-    "file",
-    "foil",
-    "tone",
-    "found",
-    "fond",
-    "bite",
     "bout",
-    "near",
-    "clear",
-    "career",
-    "engineer",
-    "hair",
-    "care",
-    "where",
-    "start",
-    "part",
-    "market",
-    "far",
-    "four",
-    "report",
-    "store",
-    "door",
-    "hear",
-    "beer",
-    "fear",
-    "fair",
-    "core",
-    "for",
-    "star",
-    "farm",
-    "form",
-    "cart",
-    "court",
-    "product",
-    "client",
-    "begin",
-    "decide",
-    "reply",
-    "explain",
-    "complete",
-    "design",
-    "extra",
-    "success",
-    "hotel",
-    "information",
-    "economic",
-    "financial",
-    "opportunity",
-    "presentation",
-    "photograph",
-    "photography",
     "photographic",
-    "economy",
     "analytical",
     "managerial",
-    "develop",
-    "competition",
-    "calendar",
-    "sport",
-    "blow",
-    "below",
-    "state",
-    "estate",
-    "steam",
-    "esteem",
-    "prayed",
-    "parade",
-    "claps",
-    "collapse",
-    "plight",
-    "polite",
-    "really",
-    "top",
-    "say",
-    "strengths"
+    "polite"
   ]
 }

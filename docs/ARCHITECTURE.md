@@ -50,7 +50,7 @@ AudioService.say(text)
   otherwise, or if the file fails to load      ─► SpeechService (device voice)
 ```
 
-- `scripts/fetch-audio.mjs` loads the course with Vite’s `runnerImport`, collects every single word (card words, pairs, stress words, drill cells, keywords), and looks up `File:En-us-<word>.ogg` on Commons. It keeps only free licenses, skips heteronyms, and downloads the original upload (Wikimedia’s converted MP3 copies are heavily rate-limited), one file at a time with adaptive pacing. The manifest is saved after every file, so a stopped run resumes.
+- `scripts/fetch-audio.mjs` loads the course with Vite’s `runnerImport`, collects every single word (card words, pairs, stress words, drill cells, keywords), and looks up `File:En-us-<word>.ogg` on Commons. For words without one, it reads the word’s English entry on Wiktionary and takes a recording that editors labelled US or General American (often a Lingua Libre WAV file), if its file name is the word itself. It keeps only free licenses, skips heteronyms, and downloads the original upload (Wikimedia’s converted MP3 copies are heavily rate-limited), one file at a time with adaptive pacing. The manifest is saved after every file, so a stopped run resumes.
 - `AudioService` fetches the manifest at start-up and validates it like any untrusted input: safe relative file paths, web links only. It uses a recording only if the browser can play its format (`canPlayType`).
 - Ear tests ask `sourceFor(pair)`: recordings only when one speaker recorded both words, otherwise the device voice for both.
 - `tests/audio-files.test.ts` checks the installed manifest and files in CI without touching the network.

@@ -181,13 +181,15 @@ export class AudioService {
 
   /**
    * One source for a set of words that are compared with each other, such as an ear-test pair.
-   * Recordings are used only when every word has one by the same speaker; otherwise a voice
-   * difference could give the answer away.
+   * Recordings are used only when every word has one by the same, named speaker; otherwise a
+   * voice difference could give the answer away.
    */
   sourceFor(words: readonly string[]): AudioSource {
     if (!this.recordings || !words.length) return 'voice';
     const authors = words.map((w) => this.recordingFor(w)?.author ?? null);
-    return authors.every((a) => a !== null && a === authors[0]) ? 'recording' : 'voice';
+    const first = authors[0];
+    const known = first !== null && first !== undefined && first !== 'Unknown';
+    return known && authors.every((a) => a === first) ? 'recording' : 'voice';
   }
 
   /** All recordings, sorted by word, for the credits list. */
