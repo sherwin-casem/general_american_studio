@@ -43,6 +43,8 @@ const AUDIO_TYPES = {
   'application/ogg': 'ogg',
   'audio/ogg': 'ogg',
   'audio/mpeg': 'mp3',
+  'audio/wav': 'wav',
+  'audio/x-wav': 'wav',
 };
 const MAX_DOWNLOAD_DELAY_MS = 30_000;
 const MAX_ATTEMPTS = 8;
@@ -153,28 +155,32 @@ async function collectWords() {
 
 /**
  * Lookup results are cached between runs (in node_modules/.cache, never committed), so an
- * interrupted download resumes straight away. `--all` ignores the cache.
+ * interrupted download resumes straight away. `--all` ignores the cache. The name carries a
+ * version: change it when the shape of the cached details changes.
  */
 const LOOKUP_CACHE = join(
   ROOT,
   'node_modules',
   '.cache',
   'general-american-studio',
-  'audio-lookup.json',
+  'audio-lookup-v2.json',
 );
 
-async function readLookupCache() {
+/** Words checked on Wiktionary after no "En-us-" file was found for them. */
+const WIKTIONARY_CACHE = join(dirname(LOOKUP_CACHE), 'audio-wiktionary-v2.json');
+
+async function readLookupCache(path = LOOKUP_CACHE) {
   if (refreshAll) return {};
   try {
-    return JSON.parse(await readFile(LOOKUP_CACHE, 'utf8'));
+    return JSON.parse(await readFile(path, 'utf8'));
   } catch {
     return {};
   }
 }
 
-async function writeLookupCache(cache) {
-  await mkdir(dirname(LOOKUP_CACHE), { recursive: true });
-  await writeFile(LOOKUP_CACHE, JSON.stringify(cache));
+async function writeLookupCache(cache, path = LOOKUP_CACHE) {
+  await mkdir(dirname(path), { recursive: true });
+  await writeFile(path, JSON.stringify(cache));
 }
 
 async function api(params) {
@@ -214,6 +220,21 @@ const stripHtml = (s) =>
     .replace(/\s+/g, ' ')
     .trim();
 
+/**
+ * The speaker's name, for the credits and for telling speakers apart in ear tests. Commons gives
+ * no author for some files and then names the uploader ("No machine-readable author provided.
+ * X assumed"), so the uploader is used the same way. Some credit "recorded by X", and Lingua Libre
+ * credits "Speaker: X Recorder: Y".
+ */
+function speakerName(artist, uploader) {
+  const text = stripHtml(artist);
+  const assumed = /^No machine-readable author provided\. (.+?) assumed\b/.exec(text);
+  if (assumed) return assumed[1];
+  const credited = /^(?:Speaker:|recorded by) (.+?)(?: Recorder: .*)?$/i.exec(text);
+  if (credited) return credited[1];
+  return text || stripHtml(uploader) || 'Unknown';
+}
+
 /** Commons title candidates for a word, best first. */
 function candidates(word) {
   const cap = word[0].toUpperCase() + word.slice(1);
@@ -221,14 +242,16 @@ function candidates(word) {
   return forms.flatMap((w) => [`File:En-us-${w}.ogg`, `File:En-us-${w}.oga`]);
 }
 
-/** Looks up recordings for a batch of words. Returns word → recording info (without a file). */
-async function lookup(words) {
-  const titles = words.flatMap(candidates);
+/**
+ * Commons details of files, keyed by the title asked for. Files that are not freely licensed,
+ * or not in a format browsers play, are left out.
+ */
+async function fileInfo(titles) {
   const data = await api({
     action: 'query',
     redirects: '1',
     prop: 'imageinfo',
-    iiprop: 'url|mime|extmetadata',
+    iiprop: 'url|mime|user|extmetadata',
     iiextmetadatafilter: 'Artist|LicenseShortName|LicenseUrl',
     titles: titles.join('|'),
   });
@@ -244,41 +267,91 @@ async function lookup(words) {
     if (from) pages.set(from, page);
   }
   const found = new Map();
-  for (const word of words) {
-    for (const title of candidates(word)) {
-      const page = pages.get(title);
-      if (!page) continue;
-      const info = page.imageinfo[0];
-      const meta = info.extmetadata ?? {};
-      const license = stripHtml(meta.LicenseShortName?.value);
-      if (!FREE_LICENSE.test(license)) continue;
-      // The original upload, not Wikimedia's converted copies, which are heavily rate-limited.
-      const ext = AUDIO_TYPES[info.mime];
-      if (!ext || !info.url) continue;
-      found.set(word, {
-        src: info.url,
-        ext,
-        title: page.title,
-        author: stripHtml(meta.Artist?.value) || 'Unknown',
-        license,
-        licenseUrl: toHttps(stripHtml(meta.LicenseUrl?.value)) || 'https://commons.wikimedia.org/',
-        page: `https://commons.wikimedia.org/wiki/${encodeURIComponent(page.title.replace(/ /g, '_')).replace(/%3A/g, ':')}`,
-      });
-      break;
-    }
+  for (const title of titles) {
+    const page = pages.get(title);
+    if (!page) continue;
+    const info = page.imageinfo[0];
+    const meta = info.extmetadata ?? {};
+    const license = stripHtml(meta.LicenseShortName?.value);
+    if (!FREE_LICENSE.test(license)) continue;
+    // The original upload, not Wikimedia's converted copies, which are heavily rate-limited.
+    const ext = AUDIO_TYPES[info.mime];
+    if (!ext || !info.url) continue;
+    found.set(title, {
+      src: info.url,
+      ext,
+      title: page.title,
+      author: speakerName(meta.Artist?.value, info.user),
+      license,
+      licenseUrl: toHttps(stripHtml(meta.LicenseUrl?.value)) || 'https://commons.wikimedia.org/',
+      page: `https://commons.wikimedia.org/wiki/${encodeURIComponent(page.title.replace(/ /g, '_')).replace(/%3A/g, ':')}`,
+    });
   }
   return found;
 }
 
-const slug = (word) => word.toLowerCase().replace(/[^a-z0-9-]/g, '_');
-
-async function readManifest() {
-  try {
-    return JSON.parse(await readFile(MANIFEST, 'utf8'));
-  } catch {
-    return { words: {} };
+/** Looks up recordings for a batch of words. Returns word → recording info (without a file). */
+async function lookup(words) {
+  const info = await fileInfo(words.flatMap(candidates));
+  const found = new Map();
+  for (const word of words) {
+    const title = candidates(word).find((t) => info.has(t));
+    if (title) found.set(word, info.get(title));
   }
+  return found;
 }
+
+const WIKTIONARY_API = 'https://en.wiktionary.org/w/api.php';
+/** Accent labels on Wiktionary recordings that mean General American. */
+const US_ACCENT = /^(US|USA|GA|GenAm|General American|American)$/i;
+const capitalize = (w) => w[0].toUpperCase() + w.slice(1);
+const normalizeName = (s) => s.toLowerCase().replace(/[\s_]+/g, ' ');
+
+/**
+ * Some words have no "En-us-" file but do have a US recording under another name, such as a
+ * Lingua Libre upload. Wiktionary editors label each recording with its accent, so only files
+ * labelled US or General American in the word's English entry are used, and only when the file
+ * name ends with the word itself (not "do (unstressed)" or "do-music").
+ * Returns word → Commons file title.
+ */
+async function wiktionaryFiles(words) {
+  const url = new URL(WIKTIONARY_API);
+  const pageTitles = [...new Set(words.flatMap((w) => [w, capitalize(w)]))];
+  for (const [k, v] of Object.entries({
+    action: 'query',
+    format: 'json',
+    formatversion: '2',
+    prop: 'revisions',
+    rvprop: 'content',
+    rvslots: 'main',
+    titles: pageTitles.join('|'),
+  })) {
+    url.searchParams.set(k, v);
+  }
+  const data = await (await request(url)).json();
+  if (data.error) throw new Error(`Wiktionary API: ${data.error.code}: ${data.error.info}`);
+  const files = new Map();
+  for (const page of data.query?.pages ?? []) {
+    const word = page.title.toLowerCase();
+    if (files.has(word) || !words.includes(word)) continue;
+    const text = page.revisions?.[0]?.slots?.main?.content ?? '';
+    const parts = text.split(/^==([^=].*?)==\s*$/m);
+    const at = parts.findIndex((s, i) => i % 2 === 1 && s.trim() === 'English');
+    if (at < 0) continue;
+    for (const [, file, rest] of parts[at + 1].matchAll(/\{\{audio\|en\|([^|{}]+)([^{}]*)\}\}/g)) {
+      const accents = (/\|a=([^|}]*)/.exec(rest)?.[1] ?? '').split(/\s*,\s*/);
+      const base = normalizeName(file.trim().replace(/\.[a-z0-9]+$/i, ''));
+      const named = base === word || base.endsWith(` ${word}`) || base.endsWith(`-${word}`);
+      if (named && accents.some((a) => US_ACCENT.test(a))) {
+        files.set(word, `File:${file.trim()}`);
+        break;
+      }
+    }
+  }
+  return files;
+}
+
+const slug = (word) => word.toLowerCase().replace(/[^a-z0-9-]/g, '_');
 
 async function saveManifest(words, recorded) {
   const sorted = Object.fromEntries(
@@ -307,20 +380,14 @@ async function saveManifest(words, recorded) {
 const hasFile = (path) => existsSync(path) && statSync(path).size >= 500;
 
 async function main() {
+  // Every word is looked up (or read from the cache), so the credits stay current. Files already
+  // on disk are kept; only missing ones are downloaded.
   const words = await collectWords();
-  const previous = await readManifest();
-  const kept = {};
-  for (const word of words) {
-    const entry = previous.words?.[word];
-    if (!refreshAll && entry && existsSync(join(ROOT, 'public', entry.file))) kept[word] = entry;
-  }
-  const todo = words.filter((w) => !kept[w]);
-  console.log(`${words.length} words in the course, ${Object.keys(kept).length} already recorded.`);
   const cache = await readLookupCache();
-  const uncached = todo.filter((w) => !(w in cache));
+  const uncached = words.filter((w) => !(w in cache));
   console.log(
-    `Looking up ${uncached.length} words on Wikimedia Commons` +
-      ` (${todo.length - uncached.length} known from an earlier run)…`,
+    `${words.length} words in the course. Looking up ${uncached.length} on Wikimedia Commons` +
+      ` (${words.length - uncached.length} known from an earlier run)…`,
   );
   for (let i = 0; i < uncached.length; i += BATCH) {
     const batch = uncached.slice(i, i + BATCH);
@@ -331,18 +398,36 @@ async function main() {
     await sleep(LOOKUP_DELAY_MS);
   }
   process.stdout.write('\n');
+
+  const wiktionary = await readLookupCache(WIKTIONARY_CACHE);
+  const unchecked = words.filter((w) => !cache[w] && !(w in wiktionary));
+  if (unchecked.length) {
+    console.log(`Checking Wiktionary for other US recordings of ${unchecked.length} words…`);
+  }
+  // Each word is asked for twice (as written and capitalized), within the 50-title limit.
+  for (let i = 0; i < unchecked.length; i += 20) {
+    const batch = unchecked.slice(i, i + 20);
+    const files = await wiktionaryFiles(batch);
+    const info = files.size ? await fileInfo([...files.values()]) : new Map();
+    for (const word of batch) wiktionary[word] = info.get(files.get(word)) ?? null;
+    await writeLookupCache(wiktionary, WIKTIONARY_CACHE);
+    await sleep(LOOKUP_DELAY_MS);
+  }
+
   // In path order: the first lessons get their recordings first.
-  const found = new Map(todo.filter((w) => cache[w]).map((w) => [w, cache[w]]));
+  const found = new Map(
+    words.map((w) => [w, cache[w] ?? wiktionary[w]]).filter(([, info]) => info),
+  );
 
   if (dryRun) {
-    console.log(`Would download ${found.size} recordings.`);
-    const missing = todo.filter((w) => !found.has(w));
+    console.log(`${found.size} words have a recording.`);
+    const missing = words.filter((w) => !found.has(w));
     if (missing.length) console.log(`No recording: ${missing.join(', ')}`);
     return;
   }
 
   await mkdir(WORDS_DIR, { recursive: true });
-  const recorded = { ...kept };
+  const recorded = {};
   let added = 0;
   let failed = 0;
   let done = 0;
@@ -351,7 +436,7 @@ async function main() {
     let name = `${slug(word)}.${ext}`;
     const path = join(WORDS_DIR, name);
     done++;
-    // A file left by an interrupted run is reused; its details come from the lookup above.
+    // A file from an earlier run is reused; its details come from the lookup above.
     // Earlier versions saved MP3 copies; those are kept too.
     const earlier = [name, `${slug(word)}.mp3`].find((n) => hasFile(join(WORDS_DIR, n)));
     if (!refreshAll && earlier) {

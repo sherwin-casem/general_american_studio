@@ -8,7 +8,7 @@ Every sound of General American, real speakers, and a new design. Saved progress
 
 - **All the sounds.** The 12-week course became a path of 29 lessons in 8 units: all 24 consonants, the flap and held T, all 16 vowels and gliding vowels, the vowels before R, word stress, rhythm, intonation, consonant clusters and shadowing. 17 lessons are new.
 - **Sound chart.** Every sound in one chart, grouped by how it is made and colored by your progress. Each sound shows how to make it, its spellings, example words, its lessons, and a shortcut to log it in the notebook.
-- **Real speakers.** Single words play recordings of American speakers from Wikimedia Commons, with a badge on each recorded word and credits on the Progress page. `npm run audio` downloads them, at build time only.
+- **Real speakers.** Single words play recordings of American speakers from Wikimedia Commons, with a badge on each recorded word and credits on the Progress page. `npm run audio` downloads them, at build time only. Words without an `En-us-` recording fall back to recordings that Wiktionary labels as US.
 - **Today view.** The next lesson, a weekly plan of two lessons, a review list (notebook check-ins due and lessons to repeat), and progress through each unit.
 - Spellings on every sound card, and a YouGlish link for each shadowing script.
 - The notebook covers all 50 sounds and skills.

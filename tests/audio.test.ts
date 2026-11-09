@@ -195,6 +195,14 @@ describe('AudioService', () => {
     expect(audio.sourceFor(['ship', 'cheap'])).toBe('voice');
   });
 
+  it('never treats two recordings with no named speaker as the same speaker', async () => {
+    const { audio } = await loaded({
+      bin: rec('bin', 'Unknown'),
+      pin: rec('pin', 'Unknown'),
+    });
+    expect(audio.sourceFor(['bin', 'pin'])).toBe('voice');
+  });
+
   it('lists credits sorted by word', async () => {
     const { audio } = await loaded({ think: rec('think'), ant: rec('ant') });
     expect(audio.credits().map(([word]) => word)).toEqual(['ant', 'think']);

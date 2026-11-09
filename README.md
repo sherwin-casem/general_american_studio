@@ -53,6 +53,7 @@ npm run audio -- --all       # check every word again
 
 - Files go to `public/audio/words/`, and `public/audio/manifest.json` lists each word with its speaker, license and source page. The Progress page shows these credits, as the licenses (mostly CC BY-SA) require.
 - Only freely licensed files are used: CC BY, CC BY-SA, CC0 or public domain. The original uploads are saved (mostly Ogg Vorbis, about 15 KB each).
+- Most files are the `En-us-<word>` recordings on Commons. For a word without one, the script uses a recording that Wiktionary labels as US or General American, such as a Lingua Libre upload. About 30 course words have no US recording anywhere on Commons and always use the device voice; `npm run audio -- --dry` lists them.
 - Words with two pronunciations (present, record, live, minute…) always use the device voice, so a recording can never play the wrong stress.
 - In an ear test, both words of a minimal pair come from the same speaker, or both from the device voice, so the voice itself never gives the answer away.
 - Wikimedia limits how fast automated clients may download, and limits unidentified clients much more. The script goes one file at a time, in lesson order (so the first lessons get recordings first), slows down when asked, and saves after every file. Stop it at any time; running it again continues where it stopped, and lookups are cached in `node_modules/.cache`. Setting `AUDIO_CONTACT` to your website or email identifies you to Wikimedia, as its User-Agent policy asks, and usually makes downloads much faster: `$env:AUDIO_CONTACT = "you@example.com"; npm run audio`.
@@ -138,7 +139,7 @@ docs/ARCHITECTURE.md    How the pieces fit together
 
 ## Browser support
 
-Current Chrome, Edge, Safari and Firefox, on desktop and mobile. Recordings are the original Ogg files from Commons, which Edge, Chrome and Firefox play. Where a browser can’t play them (some Safari versions), words use the device voice instead. Sentence voices depend on the device: Edge’s “Natural” voices sound best, then Chrome’s “Google US English”. If a browser has no speech support, the app says so; recordings and YouGlish links still work.
+Current Chrome, Edge, Safari and Firefox, on desktop and mobile. Recordings are the original files from Commons, almost all Ogg (plus a few WAV), which Edge, Chrome and Firefox play. Where a browser can’t play them (some Safari versions), words use the device voice instead. Sentence voices depend on the device: Edge’s “Natural” voices sound best, then Chrome’s “Google US English”. If a browser has no speech support, the app says so; recordings and YouGlish links still work.
 
 ## Privacy
 
