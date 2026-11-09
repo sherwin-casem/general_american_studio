@@ -1,0 +1,19 @@
+{
+  "name": "General American Studio",
+  "short_name": "GA Studio",
+  "description": "A 12-week General American pronunciation course in short weekly sessions.",
+  "lang": "en",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#F2F4F8",
+  "theme_color": "#2346C4",
+  "icons": [
+    {
+      "src": "icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}

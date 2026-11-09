@@ -1,0 +1,300 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <!-- csp -->
+    <title>General American Studio</title>
+    <meta
+      name="description"
+      content="Learn every sound of General American English: consonants, vowels, word stress, rhythm and intonation, with real recordings of American speakers."
+    />
+    <meta name="theme-color" content="#2346C4" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#0F1320" media="(prefers-color-scheme: dark)" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+    <link rel="icon" href="/icon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/icon.svg" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <div class="shell">
+      <aside class="side">
+        <div class="brand">
+          <span
+            class="brand-mark"
+            title="/ɚ/, the R-colored vowel in “better”: a hallmark of General American"
+            >/ɚ/</span
+          >
+          <div class="brand-text">
+            <span class="brand-name">General American Studio</span>
+            <span class="brand-sub">Every sound of American English</span>
+          </div>
+        </div>
+
+        <nav class="nav" aria-label="Main">
+          <a class="nav-item" href="#today" data-view="today"
+            ><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false">
+              <circle
+                cx="12"
+                cy="12"
+                r="4"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              /></svg
+            ><span>Today</span></a
+          >
+          <a class="nav-item" href="#sounds" data-view="sounds"
+            ><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false">
+              <path
+                d="M3 12h2M7 8v8M11 4v16M15 7v10M19 10v4M21 12h0"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              /></svg
+            ><span>Sounds</span></a
+          >
+          <a class="nav-item" href="#practice" data-view="practice"
+            ><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false">
+              <path
+                d="M8 19h7.5a3.5 3.5 0 0 0 0-7h-7a3.5 3.5 0 0 1 0-7H16"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
+              <circle cx="6" cy="19" r="2" fill="currentColor" />
+              <circle cx="18" cy="5" r="2" fill="currentColor" /></svg
+            ><span>Lessons</span></a
+          >
+          <a class="nav-item" href="#notebook" data-view="notebook"
+            ><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false">
+              <path
+                d="M6 3h11a2 2 0 0 1 2 2v16l-7.5-4L4 21V5a2 2 0 0 1 2-2z"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              /></svg
+            ><span>Notebook</span><span class="count" id="nb-count"></span
+          ></a>
+          <a class="nav-item" href="#progress" data-view="progress"
+            ><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false">
+              <path
+                d="M4 20V10M10 20V4M16 20v-7M22 20H2"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              /></svg
+            ><span>Progress</span></a
+          >
+        </nav>
+
+        <div class="side-foot">
+          <div id="status" class="status" role="status"></div>
+          <details class="settings" id="settings">
+            <summary>
+              <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false">
+                <path
+                  d="M4 6h10M18 6h2M4 12h4M12 12h8M4 18h12M20 18h0"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <circle
+                  cx="16"
+                  cy="6"
+                  r="2"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <circle
+                  cx="10"
+                  cy="12"
+                  r="2"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <circle
+                  cx="18"
+                  cy="18"
+                  r="2"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                /></svg
+              ><span>Voice and audio</span>
+            </summary>
+            <div id="audio-panel"></div>
+          </details>
+        </div>
+      </aside>
+
+      <main id="main" tabindex="-1">
+        <div id="storage-notice"></div>
+
+        <section class="view" id="view-today" aria-label="Today">
+          <div id="today"></div>
+        </section>
+
+        <section class="view" id="view-sounds" aria-labelledby="sounds-title" hidden>
+          <header class="page-head">
+            <p class="eyebrow">Sound chart</p>
+            <h1 class="page-title" id="sounds-title">All the sounds of American English</h1>
+            <p class="muted">
+              Every consonant and vowel of General American, grouped by how they are made. Select a
+              sound to learn it, hear it, and jump to the lesson that practices it.
+            </p>
+          </header>
+          <div class="sounds-layout">
+            <div id="sound-chart" class="sound-chart"></div>
+            <aside
+              class="sound-detail panel"
+              id="sound-detail"
+              aria-labelledby="sound-detail-title"
+            ></aside>
+          </div>
+        </section>
+
+        <section class="view" id="view-practice" aria-label="Lessons" hidden>
+          <div class="lesson-layout">
+            <details class="path-toggle" id="path-toggle">
+              <summary>
+                <span class="eyebrow">All lessons</span><span id="path-summary"></span>
+              </summary>
+              <nav class="path" id="path" aria-label="Lesson path"></nav>
+            </details>
+            <div class="lesson-main">
+              <div class="lesson-head panel" id="lesson-head"></div>
+              <div class="steps" id="steps"></div>
+            </div>
+          </div>
+        </section>
+
+        <section class="view" id="view-notebook" aria-labelledby="notebook-title" hidden>
+          <header class="page-head">
+            <p class="eyebrow">Sound notebook</p>
+            <h1 class="page-title" id="notebook-title">Your difficult sounds</h1>
+          </header>
+          <div class="nbgrid">
+            <form class="panel" id="note-form" novalidate>
+              <h2 class="h3">Log a difficult sound</h2>
+              <p class="small muted">
+                Write it down the moment a sound trips you up. Check in each week to see it improve.
+              </p>
+              <div class="field">
+                <label for="nf-sound">Sound</label>
+                <select id="nf-sound"></select>
+              </div>
+              <div class="field">
+                <label for="nf-example">Word or phrase where it happens</label>
+                <input
+                  type="text"
+                  id="nf-example"
+                  maxlength="80"
+                  autocomplete="off"
+                  placeholder="e.g. three Thursdays"
+                />
+              </div>
+              <div class="field">
+                <label for="nf-text">What goes wrong?</label>
+                <textarea
+                  id="nf-text"
+                  maxlength="600"
+                  placeholder="e.g. My tongue stays behind my teeth, so it sounds like “tree”."
+                ></textarea>
+              </div>
+              <div class="field">
+                <span class="lbl" id="nf-rate-lbl">How clear is it right now?</span>
+                <div class="rate" id="nf-rate" role="group" aria-labelledby="nf-rate-lbl"></div>
+              </div>
+              <button class="btn primary" type="submit" id="nf-save">Save to notebook</button>
+            </form>
+            <div class="stack">
+              <div id="nb-due"></div>
+              <div class="ph-row">
+                <h2 class="ph">Your sounds</h2>
+                <div class="filters" id="nb-filters" role="group" aria-label="Filter notes"></div>
+              </div>
+              <div id="nb-list"></div>
+            </div>
+          </div>
+        </section>
+
+        <section class="view" id="view-progress" aria-labelledby="progress-title" hidden>
+          <header class="page-head">
+            <p class="eyebrow">Progress</p>
+            <h1 class="page-title" id="progress-title">How far you’ve come</h1>
+          </header>
+          <div class="vstack">
+            <div class="stats" id="pg-stats"></div>
+            <section class="panel" aria-labelledby="pg-chart-title">
+              <div class="ph-row">
+                <h2 class="ph" id="pg-chart-title">Clarity over time</h2>
+                <span class="small muted">Your self-rating at the end of each session, 1 to 5</span>
+              </div>
+              <div class="chart" id="pg-chart"></div>
+            </section>
+            <section class="panel" aria-labelledby="pg-map-title">
+              <div class="ph-row">
+                <h2 class="ph" id="pg-map-title">Lesson map</h2>
+                <span class="small muted">Select a lesson to practice it</span>
+              </div>
+              <div class="map" id="pg-map"></div>
+            </section>
+            <section class="panel" aria-labelledby="pg-history-title">
+              <h2 class="ph" id="pg-history-title">Session history</h2>
+              <div id="pg-history"></div>
+            </section>
+            <section class="panel" aria-labelledby="pg-data-title">
+              <h2 class="ph" id="pg-data-title">Your data</h2>
+              <div id="pg-data"></div>
+            </section>
+            <section class="panel" aria-labelledby="pg-credits-title">
+              <h2 class="ph" id="pg-credits-title">Audio credits</h2>
+              <div id="pg-credits"></div>
+            </section>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+    <div class="sr-only" id="announcer" aria-live="polite" aria-atomic="true"></div>
+    <noscript
+      ><p class="noscript">
+        General American Studio needs JavaScript. Turn it on in your browser settings, then reload
+        the page.
+      </p></noscript
+    >
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

@@ -1,0 +1,112 @@
+/* Design tokens. Every color is a token, defined for light and dark.
+   Theme follows the OS setting; an explicit data-theme on <html> overrides it. */
+:root {
+  color-scheme: light;
+  --bg: #f2f4f8;
+  --surface: #ffffff;
+  --surface-2: #e8ecf4;
+  --ink: #161d33;
+  --ink-2: #465071;
+  --muted: #69738e;
+  --line: #d4dae6;
+  --accent: #2346c4;
+  --accent-ink: #ffffff;
+  --accent-soft: #e2e8fb;
+  --hl: #f6c75a;
+  --stress-soft: #fbebc6;
+  --stress-ink: #5c3f00;
+  --good: #1d7f55;
+  --good-soft: #dcf0e5;
+  --bad: #b3361f;
+  --bad-soft: #f9e1db;
+  --shadow: 0 1px 2px #161d330f, 0 6px 18px #161d330d;
+
+  --vowel: #a3480f;
+  --vowel-soft: #fbe9dc;
+  --skill: #6b3fb8;
+  --skill-soft: #eee6fb;
+  --hero-a: #2346c4;
+  --hero-b: #4a2fb3;
+  --hero-ink: #ffffff;
+  --hero-muted: #dbe2ff;
+  --hero-chip: #ffffff2b;
+  --hero-btn-ink: #1d2f99;
+  --shadow-sm: 0 1px 2px #161d330f;
+
+  --f-display: 'Bricolage Grotesque Variable', 'Avenir Next', 'Segoe UI', system-ui, sans-serif;
+  --f-body: 'Atkinson Hyperlegible', 'Segoe UI', system-ui, -apple-system, sans-serif;
+  --f-ipa: 'Noto Serif', 'Charis SIL', 'Doulos SIL', 'Gentium Plus', 'Lucida Sans Unicode', serif;
+
+  --r: 12px;
+  --r-sm: 8px;
+  --gutter-l: max(16px, env(safe-area-inset-left, 0px));
+  --gutter-r: max(16px, env(safe-area-inset-right, 0px));
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme='light']) {
+    color-scheme: dark;
+    --bg: #0f1320;
+    --surface: #161b2b;
+    --surface-2: #1f2639;
+    --ink: #e7ebf5;
+    --ink-2: #b4bdd3;
+    --muted: #8c95ac;
+    --line: #2b3349;
+    --accent: #8da5ff;
+    --accent-ink: #0c1230;
+    --accent-soft: #222c55;
+    --hl: #6e5214;
+    --stress-soft: #3d3012;
+    --stress-ink: #fce6b3;
+    --good: #55c491;
+    --good-soft: #15362a;
+    --bad: #f2907a;
+    --bad-soft: #3e211b;
+    --shadow: 0 1px 2px #00000066, 0 6px 20px #00000040;
+    --vowel: #f5a56e;
+    --vowel-soft: #3a2517;
+    --skill: #c6a8ff;
+    --skill-soft: #2a2142;
+    --hero-a: #2b3c95;
+    --hero-b: #432c8c;
+    --hero-ink: #f3f5ff;
+    --hero-muted: #c4cdf5;
+    --hero-chip: #ffffff24;
+    --hero-btn-ink: #1d2f99;
+    --shadow-sm: 0 1px 2px #00000066;
+  }
+}
+
+:root[data-theme='dark'] {
+  color-scheme: dark;
+  --bg: #0f1320;
+  --surface: #161b2b;
+  --surface-2: #1f2639;
+  --ink: #e7ebf5;
+  --ink-2: #b4bdd3;
+  --muted: #8c95ac;
+  --line: #2b3349;
+  --accent: #8da5ff;
+  --accent-ink: #0c1230;
+  --accent-soft: #222c55;
+  --hl: #6e5214;
+  --stress-soft: #3d3012;
+  --stress-ink: #fce6b3;
+  --good: #55c491;
+  --good-soft: #15362a;
+  --bad: #f2907a;
+  --bad-soft: #3e211b;
+  --shadow: 0 1px 2px #00000066, 0 6px 20px #00000040;
+  --vowel: #f5a56e;
+  --vowel-soft: #3a2517;
+  --skill: #c6a8ff;
+  --skill-soft: #2a2142;
+  --hero-a: #2b3c95;
+  --hero-b: #432c8c;
+  --hero-ink: #f3f5ff;
+  --hero-muted: #c4cdf5;
+  --hero-chip: #ffffff24;
+  --hero-btn-ink: #1d2f99;
+  --shadow-sm: 0 1px 2px #00000066;
+}
