@@ -3,6 +3,7 @@
  * chart and the lesson path. The page itself is static; the call to action, the unit progress and
  * the recordings are small regions that follow the learner's data.
  */
+import heroArtUrl from '../../assets/home-hero.png';
 import {
   BRIDGE_ID,
   getLesson,
@@ -53,16 +54,58 @@ const STEP_NAMES: Record<StepId, string> = {
 
 const SOUND_COUNT = SOUNDS.filter((x) => x.kind === 'consonant' || x.kind === 'vowel').length;
 
-const FLOATERS = ['ʃ', 'ɝ', 'ð', 'ɑ', 'ŋ', 'oʊ'];
+/** Sound symbols drifting in the sky of the homepage picture. */
+const SKY_GLYPHS = ['θ', 'ŋ', 'æ'];
 
-function heroVisual(): SafeHtml {
+/**
+ * The homepage picture, "Voice at dusk": someone speaks toward a city at sunset and their voice
+ * flows out as glowing waves. Layers carry a depth for the pointer parallax in `heroScene()`.
+ * The card on it plays a real recording of "water", with two hallmarks of General American.
+ */
+function heroArt(): SafeHtml {
+  return html`<div class="hp-art" id="hero-art">
+    <div class="hp-frame">
+      <div class="hp-layer" data-depth="-10">
+        <img
+          class="hp-img"
+          src="${heroArtUrl}"
+          alt=""
+          width="1000"
+          height="1200"
+          decoding="async"
+          fetchpriority="high"
+        />
+      </div>
+      <div class="hp-layer hp-sky" data-depth="18" aria-hidden="true">
+        ${SKY_GLYPHS.map(
+          (g, i) => html`<span class="hp-glyph g${i}" data-anim="float">${g}</span>`,
+        )}
+      </div>
+      <div class="hp-layer hp-front" data-depth="8">
+        <button
+          type="button"
+          class="hp-listen"
+          data-say="water"
+          data-rate="0.8"
+          aria-label="Hear “water” said by an American speaker"
+        >
+          <span class="hp-play">${ICONS.play}</span>
+          <span class="hp-word"
+            ><b>water</b> <span class="hp-ipa">/ˈwɑɾɚ/</span
+            ><small>Flap T and the R-colored vowel</small></span
+          >
+          <span class="hp-eq" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span>
+        </button>
+      </div>
+    </div>
+  </div>`;
+}
+
+function demoCard(): SafeHtml {
   const first = DEMO_SOUNDS[0] ?? 'th-voiceless';
   const sound = soundByKey(first);
   const shape = articulationFor(first);
-  return html`<div class="hh-visual" id="mouth-demo">
-    ${FLOATERS.map(
-      (g, i) => html`<span class="floater f${i}" aria-hidden="true" data-anim="float">${g}</span>`,
-    )}
+  return html`<div class="hd-visual" id="mouth-demo" data-reveal>
     <div class="demo-card">
       <div class="demo-top">
         <span class="demo-ipa" data-demo="ipa">/${sound.ipa}/</span>
@@ -100,14 +143,40 @@ function heroVisual(): SafeHtml {
           })}
         </div>
       </div>
-      <div class="legend" aria-hidden="true">
-        <span><i class="lg-tongue"></i>Tongue</span>
-        <span><i class="lg-focus"></i>Where it happens</span>
-        <span><i class="lg-air"></i>Air</span>
-        <span><i class="lg-buzz"></i>Voice</span>
-      </div>
     </div>
   </div>`;
+}
+
+/** The talking mouth: a diagram that morphs from sound to sound, with what its colors mean. */
+function insideTheMouth(): SafeHtml {
+  return html`<section class="home-section home-demo" aria-labelledby="demo-title">
+    <div class="hd-copy" data-reveal>
+      <p class="eyebrow">Inside the mouth</p>
+      <h2 class="section-title" id="demo-title">Watch every sound take shape</h2>
+      <p>
+        Every sound has its own diagram: a side view of the mouth. Pick a sound and watch the
+        tongue, lips and soft palate move into place, then hear it.
+      </p>
+      <ul class="hd-keys">
+        <li>
+          <i class="lg-tongue"></i><span><b>Tongue.</b> Where it rises, or what it touches.</span>
+        </li>
+        <li>
+          <i class="lg-focus"></i
+          ><span><b>Where it happens.</b> The spot that shapes the sound.</span>
+        </li>
+        <li>
+          <i class="lg-air"></i
+          ><span><b>Air.</b> Out through the mouth, or through the nose for M, N and NG.</span>
+        </li>
+        <li>
+          <i class="lg-buzz"></i
+          ><span><b>Voice.</b> The vocal folds buzz for voiced sounds like B and Z.</span>
+        </li>
+      </ul>
+    </div>
+    ${demoCard()}
+  </section>`;
 }
 
 const HOW_ART = {
@@ -249,7 +318,7 @@ export function homeView(): SafeHtml {
           <li>${ICONS.check}Your progress stays on this device</li>
         </ul>
       </div>
-      ${heroVisual()}
+      ${heroArt()}
     </section>
 
     <section class="home-stats" aria-label="The course in numbers" data-reveal="stagger">
@@ -265,7 +334,7 @@ export function homeView(): SafeHtml {
       </div>
     </section>
 
-    ${howItWorks()} ${vowelSection()}
+    ${insideTheMouth()} ${howItWorks()} ${vowelSection()}
 
     <section class="home-section" aria-labelledby="path-units-title">
       <div class="section-head" data-reveal>
@@ -288,19 +357,112 @@ export function homeView(): SafeHtml {
       <div id="home-voices"></div>
     </section>
 
-    <section class="home-end" aria-labelledby="end-title" data-reveal>
-      <h2 id="end-title">Ready for your next sound?</h2>
-      <p>One lesson takes about ${SESSION_MINUTES} minutes. Two a week is a great pace.</p>
-      <div class="hh-cta" id="home-cta-end"></div>
-    </section>
+    ${siteFooter()}`;
+}
 
-    <footer class="home-foot">
+const APP_LINKS: readonly (readonly [string, string])[] = [
+  ['#today', 'Today'],
+  ['#practice', 'Lessons'],
+  ['#sounds', 'Sound chart'],
+  ['#notebook', 'Notebook'],
+  ['#progress', 'Progress'],
+];
+
+const SOURCES: readonly (readonly [string, string])[] = [
+  ['https://commons.wikimedia.org/', 'Wikimedia Commons'],
+  ['https://en.wiktionary.org/', 'Wiktionary'],
+  ['https://lingualibre.org/', 'Lingua Libre'],
+  ['https://en.wikipedia.org/wiki/General_American_English', 'About General American'],
+];
+
+/** A night sky under the dusk of the hero picture: the last call to action, links and credits. */
+function siteFooter(): SafeHtml {
+  const external = (href: string, label: string) =>
+    html`<a href="${href}" target="_blank" rel="noopener noreferrer"
+      >${label}<span class="sr-only"> (opens in a new tab)</span></a
+    >`;
+  return html`<footer class="site-foot" aria-labelledby="sf-title">
+    <div class="sf-cta" data-reveal>
+      <div>
+        <h2 class="sf-cta-title" id="end-title">Ready for your <span class="grad-night">next sound</span>?</h2>
+        <p>One lesson takes about ${SESSION_MINUTES} minutes. Two a week is a great pace.</p>
+      </div>
+      <div class="hh-cta" id="home-cta-end"></div>
+    </div>
+
+    <div class="sf-main">
+      <div class="sf-brand">
+        <a class="sf-logo" href="#home"
+          ><span class="brand-mark" aria-hidden="true">/ɚ/</span
+          ><span class="sf-name" id="sf-title">General American Studio</span></a
+        >
+        <p>
+          Every sound of American English, from single consonants and vowels to the rhythm and
+          melody of natural speech.
+        </p>
+        <ul class="sf-promises">
+          <li>${ICONS.check}Free, with no account</li>
+          <li>${ICONS.check}Works offline</li>
+          <li>${ICONS.check}Your progress never leaves this browser</li>
+        </ul>
+      </div>
+      <nav class="sf-col" aria-labelledby="sf-practice">
+        <h2 class="sf-h" id="sf-practice">Practice</h2>
+        <ul>
+          ${APP_LINKS.map(([href, label]) => html`<li><a href="${href}">${label}</a></li>`)}
+        </ul>
+      </nav>
+      <nav class="sf-col" aria-labelledby="sf-course">
+        <h2 class="sf-h" id="sf-course">The course</h2>
+        <ul>
+          ${UNITS.map(
+            (unit, i) =>
+              html`<li>
+                <button
+                  type="button"
+                  class="sf-link"
+                  data-action="go-lesson"
+                  data-lesson="${unit.lessons[0]?.id ?? ''}"
+                >
+                  <span class="sf-n">${i + 1}</span>${unit.name}
+                </button>
+              </li>`,
+          )}
+        </ul>
+      </nav>
+      <div class="sf-col">
+        <h2 class="sf-h" id="sf-help">Help and sources</h2>
+        <ul>
+          <li>
+            <button type="button" class="sf-link" data-action="open-settings">
+              Voice and animation settings
+            </button>
+          </li>
+          <li>
+            <button type="button" class="sf-link" data-action="show-credits">
+              Audio credits
+            </button>
+          </li>
+          ${SOURCES.map(([href, label]) => html`<li>${external(href, label)}</li>`)}
+        </ul>
+      </div>
+    </div>
+
+    <div class="sf-bottom">
       <p>
-        Recordings by volunteer speakers on Wikimedia Commons, shared under free licenses: see the
-        credits on the <a href="#progress">Progress</a> page. Everything you log stays in this
-        browser.
+        © ${new Date().getFullYear()} General American Studio · Version ${__APP_VERSION__}
+        <span class="sf-dot" aria-hidden="true">·</span>
+        <span>Word recordings by volunteer speakers, under free licenses.</span>
       </p>
-    </footer>`;
+      <button type="button" class="sf-top" data-action="to-top">
+        Back to top <span aria-hidden="true">↑</span>
+      </button>
+    </div>
+    <svg class="sf-hills" viewBox="0 0 1200 120" preserveAspectRatio="none" aria-hidden="true" focusable="false">
+      <path class="sf-hill-a" d="M0 70 C150 40 260 92 420 66 S700 30 860 62 S1080 96 1200 58 V120 H0Z" />
+      <path class="sf-hill-b" d="M0 96 C180 74 300 110 480 92 S760 66 940 90 S1110 112 1200 88 V120 H0Z" />
+    </svg>
+  </footer>`;
 }
 
 /** The main call to action: start the first lesson, or continue where the learner is. */

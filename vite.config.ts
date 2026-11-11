@@ -1,5 +1,12 @@
+import { readFileSync } from 'node:fs';
 import type { Plugin } from 'vite';
 import { defineConfig } from 'vitest/config';
+
+const { version } = JSON.parse(
+  readFileSync(new URL('./package.json', import.meta.url), 'utf8'),
+) as {
+  version: string;
+};
 
 /**
  * Strict Content-Security-Policy for production builds.
@@ -36,6 +43,7 @@ function contentSecurityPolicy(): Plugin {
 
 export default defineConfig({
   base: './',
+  define: { __APP_VERSION__: JSON.stringify(version) },
   plugins: [contentSecurityPolicy()],
   build: {
     target: 'es2022',

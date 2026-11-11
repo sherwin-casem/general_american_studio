@@ -25,10 +25,13 @@ services/  ──────────┴─────────┘
 
 ## Illustrations and motion
 
+- The homepage picture is a static SVG file, `src/assets/home-hero.png`, imported by `views/home.ts` so the build gives it a content-hashed name (the service worker then caches it like any built asset). It is loaded as an image, so it has no text and needs no fonts; the sound symbols and the "water" card over it are HTML. Its layers carry `data-depth` for `heroScene()`.
+
 - `ui/illustrations.ts` draws every picture as SVG from numbers. A mouth shape is an `Articulation`: tongue points (tip, blade, body, back), jaw, lips, rounding, lip tuck, soft palate, voicing, airflow and the highlighted spot. Consonants take their shape from their place of articulation; vowels from their position on the vowel chart (front–back, high–low), with rounding for the back vowels. `mouthParts()` turns a shape into path data, with the tongue as a smooth curve through its points.
 - Because shapes are numbers, `mixArticulation()` can blend two of them, and `updateMouth()` updates a drawn diagram in place. That is how the homepage mouth morphs between sounds.
 - Pictures use classes only (colors are theme tokens in `styles/art.css`), never style attributes, so the Content-Security-Policy holds. Tests check this for every sound.
 - `ui/motion.ts` wraps [Motion](https://motion.dev)'s `animate`, `inView` and `stagger`. Its rules: content is visible without animation (animations start from a state Motion sets and always end visible, so a re-render never leaves anything hidden); reduced motion means no movement; without the Web Animations API (tests, old browsers) everything is a no-op; and no animation error can break the app.
+- `heroScene()` settles the homepage picture, starts a slow drift while it is on screen, and moves its layers with the pointer (not touch). It is started by the `#home` region and stopped before Home is rendered again.
 - What animates: view changes (`enterView`, from the `main` region), scroll reveals for `data-reveal` (Home), the navigation pill (`.nav` region), count-ups for `data-count`, meters, swapping the Sounds panel, quiz feedback (`pop`, `shake`), the finished-lesson `celebrate` burst and toasts. Diagram loops (airflow, buzzing, pulse) run through `ambient()` only while a diagram is on screen; each region stops its loops before it is rendered again.
 - The learner's **Animations** setting (`system`, `on`, `off`) is saved with the preferences. `setMotionPreference()` applies it and mirrors the result on `<html data-motion>`, which CSS uses for press feedback. Changing it renders every region again, so animations start or stop at once.
 

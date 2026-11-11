@@ -6,7 +6,7 @@ import { readFileSync } from 'node:fs';
 import { resolve } from 'node:path';
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
 import type { AppHandle } from '../src/app';
-import { getLesson, LESSONS, SOUNDS, TOTAL_LESSONS } from '../src/content/course';
+import { getLesson, LESSONS, SOUNDS, TOTAL_LESSONS, UNITS } from '../src/content/course';
 import { STORAGE_KEYS } from '../src/storage/local';
 import { settle } from './fixtures';
 
@@ -145,6 +145,53 @@ describe('General American Studio', () => {
     await click('#home-cta [data-action="go-lesson"]');
     expect(visible('practice')).toBe(true);
     expect(el('#lesson-head .lh-title').textContent).toBe(FIRST.title);
+  });
+
+  it('shows the hero picture with a card that plays a real recording', async () => {
+    await boot();
+    const img = el<HTMLImageElement>('#home .hp-img');
+    expect(img.getAttribute('src')).toContain('home-hero');
+    // The picture is decoration: the heading and text say what the page is about.
+    expect(img.getAttribute('alt')).toBe('');
+    expect(document.querySelectorAll('#home .hp-glyph').length).toBeGreaterThan(0);
+    const card = el('#home .hp-listen');
+    expect(card.dataset.say).toBe('water');
+    expect(card.getAttribute('aria-label')).toContain('water');
+    // The interactive diagram has its own section now.
+    expect(el('#mouth-demo').closest('.home-demo')).not.toBeNull();
+  });
+
+  it('has a footer with the app, every unit, settings, credits and the way back up', async () => {
+    await boot();
+    const foot = el('#home .site-foot');
+    const links = [...foot.querySelectorAll('a[href^="#"]')].map((a) => a.getAttribute('href'));
+    expect(links).toEqual(
+      expect.arrayContaining(['#today', '#practice', '#sounds', '#notebook', '#progress']),
+    );
+    expect(foot.querySelectorAll('.sf-link[data-action="go-lesson"]')).toHaveLength(8);
+    expect(foot.textContent).toContain(`Version ${__APP_VERSION__}`);
+    for (const a of foot.querySelectorAll('a[target="_blank"]')) {
+      expect(a.getAttribute('rel')).toContain('noopener');
+    }
+    // The closing call to action lives in the footer.
+    expect(foot.querySelector('#home-cta-end [data-action="go-lesson"]')).not.toBeNull();
+
+    await click('.site-foot [data-action="open-settings"]');
+    expect(el<HTMLDetailsElement>('#settings').open).toBe(true);
+    expect(document.activeElement?.id).toBe('motion-sel');
+
+    await click('.site-foot [data-action="to-top"]');
+    expect(document.activeElement?.id).toBe('main');
+
+    await click('.site-foot [data-action="show-credits"]');
+    expect(visible('progress')).toBe(true);
+    expect(document.activeElement?.id).toBe('pg-credits-title');
+
+    await goTo('home');
+    const unitTwo = UNITS[1]!.lessons[0]!;
+    await click(`.site-foot [data-lesson="${unitTwo.id}"]`);
+    expect(visible('practice')).toBe(true);
+    expect(el('#lesson-head .lh-title').textContent).toBe(unitTwo.title);
   });
 
   it('starts the lesson from Today and shows the whole path', async () => {
