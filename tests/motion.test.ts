@@ -10,6 +10,7 @@ import {
   celebrate,
   countUp,
   enterView,
+  heroScene,
   motionAllowed,
   moveNavPill,
   pop,
@@ -91,6 +92,27 @@ describe('with reduced motion', () => {
     }).not.toThrow();
     // No celebration pieces are added when motion is off.
     expect(document.querySelector('.burst')).toBeNull();
+  });
+
+  it('keeps the homepage picture still, and ignores the pointer', () => {
+    reducedMotion(true);
+    document.body.innerHTML = `<section class="home-hero"><div class="hp-frame">
+      <div class="hp-layer" data-depth="-10"><img class="hp-img" alt=""></div>
+      <div class="hp-layer" data-depth="18"></div></div></section>`;
+    const hero = document.querySelector<HTMLElement>('.home-hero')!;
+    const stop = heroScene(hero);
+    hero.dispatchEvent(new PointerEvent('pointermove', { clientX: 5, clientY: 5 }));
+    for (const el of hero.querySelectorAll<HTMLElement>('.hp-frame, [data-depth], .hp-img')) {
+      expect(el.style.transform).toBe('');
+      expect(el.style.opacity).toBe('');
+    }
+    expect(() => stop()).not.toThrow();
+  });
+
+  it('does nothing for a hero without a picture', () => {
+    reducedMotion(false);
+    document.body.innerHTML = '<section class="home-hero"></section>';
+    expect(() => heroScene(document.querySelector<HTMLElement>('.home-hero')!)()).not.toThrow();
   });
 
   it('moves the navigation pill straight to the current item', () => {

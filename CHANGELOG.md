@@ -1,5 +1,19 @@
 # Changelog
 
+## 3.2.0 – 2026-11-11
+
+A painted homepage picture and a full footer.
+
+### Added
+
+- **Homepage picture, "Voice at dusk".** Someone speaks toward a city at sunset, and their voice flows out as glowing waves; the sun's rings ripple like sound, and the hills roll like a waveform. It fills the hero beside the headline, with sound symbols floating in its sky and a card that plays a real recording of "water" (a flap T and the R-colored vowel). With animations on, it settles into place, drifts slowly, and its layers shift with the mouse.
+- **Footer.** A night sky under the picture's dusk, with the last call to action, links to every part of the app and to each unit, "Voice and animation settings", "Audio credits", the sources of the recordings, the version, and "Back to top".
+
+### Changed
+
+- The talking mouth diagram moved from the hero to its own section, "Inside the mouth", with a key to its colors.
+- Smooth scrolling now follows Settings → Animations, like every other movement.
+
 ## 3.1.0 – 2026-11-11
 
 A homepage, pictures of every sound, and animation.

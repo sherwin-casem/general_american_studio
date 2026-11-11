@@ -200,6 +200,87 @@ export function ambient(root: ParentNode): Cleanup {
   return () => stops.forEach((stop) => stop());
 }
 
+/**
+ * The homepage picture. It settles into its frame, then drifts slowly like a camera while it is
+ * on screen, and its layers (`data-depth`, in pixels) shift with the pointer for a sense of depth:
+ * negative depths move against the pointer, positive ones with it. Touch input is ignored.
+ */
+export function heroScene(hero: HTMLElement): Cleanup {
+  const frame = hero.querySelector<HTMLElement>('.hp-frame');
+  if (!frame || !motionAllowed()) return noop;
+  const img = frame.querySelector<HTMLElement>('.hp-img');
+  const layers = [...frame.querySelectorAll<HTMLElement>('[data-depth]')];
+  const stops: Cleanup[] = [];
+  let drift: { stop(): void } | null = null;
+  let stopped = false;
+
+  safely(() => {
+    animate(
+      frame,
+      { opacity: [0, 1], transform: ['translateY(28px) scale(0.96)', 'translateY(0px) scale(1)'] },
+      { duration: 1, ease: EASE_OUT },
+    );
+    if (!img) return;
+    // The settle is short, and is left to finish even if the page is rendered again.
+    animate(img, { transform: ['scale(1.2)', 'scale(1.05)'] }, { duration: 2.2, ease: EASE_OUT });
+    if (typeof IntersectionObserver === 'undefined') return;
+    // Once settled, drift while on screen.
+    const timer = window.setTimeout(() => {
+      if (stopped) return;
+      stops.push(
+        inView(frame, () => {
+          safely(() => {
+            drift = animate(
+              img,
+              { transform: ['scale(1.05)', 'scale(1.11)'] },
+              { duration: 16, repeat: Infinity, repeatType: 'reverse', ease: 'easeInOut' },
+            );
+          });
+          return () => drift?.stop();
+        }),
+      );
+    }, 2300);
+    stops.push(() => window.clearTimeout(timer));
+  });
+
+  let frameRequest = 0;
+  const spring = { type: 'spring', stiffness: 80, damping: 18 } as const;
+  const shift = (dx: number, dy: number) => {
+    for (const layer of layers) {
+      const depth = Number(layer.dataset.depth) || 0;
+      safely(() => {
+        animate(layer, { x: dx * depth, y: dy * depth }, spring);
+      });
+    }
+  };
+  const onMove = (event: PointerEvent) => {
+    if (event.pointerType === 'touch') return;
+    cancelAnimationFrame(frameRequest);
+    frameRequest = requestAnimationFrame(() => {
+      const box = frame.getBoundingClientRect();
+      if (!box.width || !box.height) return;
+      const dx = Math.max(-1, Math.min(1, ((event.clientX - box.left) / box.width - 0.5) * 2));
+      const dy = Math.max(-1, Math.min(1, ((event.clientY - box.top) / box.height - 0.5) * 2));
+      shift(dx / 2, dy / 2);
+    });
+  };
+  const onLeave = () => {
+    cancelAnimationFrame(frameRequest);
+    shift(0, 0);
+  };
+  hero.addEventListener('pointermove', onMove);
+  hero.addEventListener('pointerleave', onLeave);
+
+  return () => {
+    stopped = true;
+    cancelAnimationFrame(frameRequest);
+    hero.removeEventListener('pointermove', onMove);
+    hero.removeEventListener('pointerleave', onLeave);
+    drift?.stop();
+    stops.forEach((stop) => stop());
+  };
+}
+
 /** A springy nudge, for a right answer or a finished step. */
 export function pop(el: Element | null): void {
   if (!el || !motionAllowed()) return;

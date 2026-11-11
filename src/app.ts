@@ -52,6 +52,8 @@ import {
   celebrate,
   countUp,
   enterView,
+  heroScene,
+  motionAllowed,
   moveNavPill,
   pop,
   revealOnScroll,
@@ -109,8 +111,8 @@ export function parseView(hash: string): View | null {
 const shallowEqual = (a: readonly unknown[], b: readonly unknown[]) =>
   a.length === b.length && a.every((v, i) => Object.is(v, b[i]));
 
-const scrollBehavior = (): ScrollBehavior =>
-  window.matchMedia?.('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth';
+/** Smooth scrolling follows the Animations setting, like every other movement. */
+const scrollBehavior = (): ScrollBehavior => (motionAllowed() ? 'smooth' : 'auto');
 
 const current = (s: AppState): LessonDraft => draftFor(s.drafts, s.lesson);
 
@@ -221,6 +223,7 @@ export function startApp(): AppHandle {
   let pillView: View | null = null;
   let mouthDemo: MouthDemo | null = null;
   let stopReveal: () => void = () => {};
+  let stopHero: () => void = () => {};
   const regions: Region[] = [
     {
       selector: 'main',
@@ -267,6 +270,9 @@ export function startApp(): AppHandle {
           });
           seen.observe(stats);
         }
+        stopHero();
+        const hero = el.querySelector<HTMLElement>('.home-hero');
+        stopHero = hero ? heroScene(hero) : () => {};
         mouthDemo?.stop();
         const demo = el.querySelector<HTMLElement>('#mouth-demo');
         if (demo) mouthDemo = startMouthDemo(demo, DEMO_SOUNDS, () => markRecordings(demo));
@@ -530,6 +536,24 @@ export function startApp(): AppHandle {
       if (!isSoundKey(key)) return;
       mouthDemo?.show(key);
       audio.say(soundByKey(key).keyword, { rate: 0.8 });
+    },
+    'to-top': () => {
+      window.scrollTo?.({ top: 0, behavior: scrollBehavior() });
+      focus('#main');
+    },
+    'open-settings': () => {
+      const settings = document.getElementById('settings');
+      if (!(settings instanceof HTMLDetailsElement)) return;
+      settings.open = true;
+      settings.scrollIntoView?.({ block: 'nearest', behavior: scrollBehavior() });
+      focus('#motion-sel');
+    },
+    'show-credits': () => {
+      showView('progress');
+      document
+        .getElementById('pg-credits-title')
+        ?.scrollIntoView?.({ block: 'start', behavior: scrollBehavior() });
+      focus('#pg-credits-title');
     },
     'pick-lesson': (el) => {
       if (!selectLesson(el.dataset.lesson)) return;
@@ -1052,6 +1076,7 @@ export function startApp(): AppHandle {
       controller.abort();
       mouthDemo?.stop();
       stopReveal();
+      stopHero();
       loops.forEach((stop) => stop());
       unsubscribeStorage?.();
       audio.stop();
