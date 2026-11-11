@@ -21,7 +21,7 @@
 
     <div class="shell">
       <aside class="side">
-        <div class="brand">
+        <a class="brand" href="#home" aria-label="General American Studio, home">
           <span
             class="brand-mark"
             title="/ɚ/, the R-colored vowel in “better”: a hallmark of General American"
@@ -31,9 +31,22 @@
             <span class="brand-name">General American Studio</span>
             <span class="brand-sub">Every sound of American English</span>
           </div>
-        </div>
+        </a>
 
         <nav class="nav" aria-label="Main">
+          <span class="nav-pill" aria-hidden="true"></span>
+          <a class="nav-item nav-home" href="#home" data-view="home"
+            ><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false">
+              <path
+                d="M3 11.5 12 4l9 7.5M5.5 9.5V20h5v-5.5h3V20h5V9.5"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              /></svg
+            ><span>Home</span></a
+          >
           <a class="nav-item" href="#today" data-view="today"
             ><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false">
               <circle
@@ -150,7 +163,7 @@
                   stroke-linecap="round"
                   stroke-linejoin="round"
                 /></svg
-              ><span>Voice and audio</span>
+              ><span>Settings</span>
             </summary>
             <div id="audio-panel"></div>
           </details>
@@ -160,7 +173,11 @@
       <main id="main" tabindex="-1">
         <div id="storage-notice"></div>
 
-        <section class="view" id="view-today" aria-label="Today">
+        <section class="view view-home" id="view-home" aria-label="Home" hidden>
+          <div id="home"></div>
+        </section>
+
+        <section class="view" id="view-today" aria-label="Today" hidden>
           <div id="today"></div>
         </section>
 

@@ -4,8 +4,19 @@ import type { NoteLevel } from '../domain/progress';
 import type { DataSnapshot, Rating, SessionRun, SoundNote, StorageMode } from '../storage/types';
 import type { Drafts } from './drafts';
 
-export type View = 'today' | 'sounds' | 'practice' | 'notebook' | 'progress';
-export const VIEWS: readonly View[] = ['today', 'sounds', 'practice', 'notebook', 'progress'];
+/** Animations: follow the system's reduced-motion setting, or always on or off. */
+export type MotionPreference = 'system' | 'on' | 'off';
+export const MOTION_PREFERENCES: readonly MotionPreference[] = ['system', 'on', 'off'];
+
+export type View = 'home' | 'today' | 'sounds' | 'practice' | 'notebook' | 'progress';
+export const VIEWS: readonly View[] = [
+  'home',
+  'today',
+  'sounds',
+  'practice',
+  'notebook',
+  'progress',
+];
 
 export interface StorageStatus {
   mode: StorageMode | null;
@@ -69,11 +80,12 @@ export interface AppState {
   importPreview: ImportPreview | null;
   /** Bumped on window resize so the chart re-measures. */
   layoutTick: number;
+  motion: MotionPreference;
 }
 
 export function initialState(overrides: Partial<AppState> = {}): AppState {
   return {
-    view: 'today',
+    view: 'home',
     lesson: 'p-b',
     lessonPinned: false,
     sound: null,
@@ -96,6 +108,7 @@ export function initialState(overrides: Partial<AppState> = {}): AppState {
     history: { confirmDelete: null },
     importPreview: null,
     layoutTick: 0,
+    motion: 'system',
     ...overrides,
   };
 }

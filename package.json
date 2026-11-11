@@ -1,6 +1,6 @@
 {
   "name": "general-american-studio",
-  "version": "3.0.0",
+  "version": "3.1.0",
   "private": true,
   "description": "Learn every sound of General American English: a 29-lesson path through all consonants and vowels, word stress, rhythm and intonation, with real recordings of American speakers.",
   "type": "module",
@@ -37,7 +37,8 @@
   "dependencies": {
     "@fontsource-variable/bricolage-grotesque": "^5.3.0",
     "@fontsource/atkinson-hyperlegible": "^5.3.0",
-    "@fontsource/noto-serif": "^5.3.0"
+    "@fontsource/noto-serif": "^5.3.0",
+    "motion": "14.6.0"
   },
   "overrides": {
     "minimatch": "^11.0.5"

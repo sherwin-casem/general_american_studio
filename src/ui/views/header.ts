@@ -4,6 +4,7 @@ import { sayButton } from '../components';
 import { plural } from '../format';
 import { html, type SafeHtml } from '../html';
 import { ICONS } from '../icons';
+import { systemPrefersReducedMotion } from '../motion';
 
 export function statusView(s: AppState): SafeHtml {
   const { mode, phase } = s.storage;
@@ -106,6 +107,25 @@ export function audioPanelView(s: AppState): SafeHtml {
       /><span class="switch-ui" aria-hidden="true"></span
       ><span><b>Real speakers for words</b><br />${recordingsLine(s)}</span>
     </label>
-    ${voiceSelect(s)}
+    ${voiceSelect(s)} ${motionSelect(s)}
   </div>`;
+}
+
+function motionSelect(s: AppState): SafeHtml {
+  const reduced = systemPrefersReducedMotion();
+  const option = (value: string, label: string) =>
+    html`<option value="${value}" ${s.motion === value ? ' selected' : ''}>${label}</option>`;
+  return html`<label class="lbl" for="motion-sel">Animations</label>
+    <select id="motion-sel" data-key="motion-sel">
+      ${option('system', `Follow my system (${reduced ? 'off' : 'on'})`)} ${option('on', 'On')}
+      ${option('off', 'Off')}
+    </select>
+    ${
+      reduced && s.motion === 'system'
+        ? html`<p class="small muted">
+            Your system asks for reduced motion, so animations are off. Choose “On” to see the
+            moving mouth diagrams.
+          </p>`
+        : ''
+    }`;
 }

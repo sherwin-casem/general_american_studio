@@ -11,6 +11,7 @@ import {
   isSoundKey,
   REPS_PER_LEVEL,
   resolveQuiz,
+  soundByKey,
   STEPS,
 } from './content/course';
 import type { SoundKey, StepId } from './content/types';
@@ -21,7 +22,14 @@ import { answerRound, nextRound, roundSpeech, startQuiz } from './domain/quiz';
 import { clampInt, LIMITS } from './domain/validation';
 import { AudioService } from './services/audio';
 import { SpeechService } from './services/speech';
-import { initialState, VIEWS, type AppState, type View } from './state/app-state';
+import {
+  initialState,
+  MOTION_PREFERENCES,
+  VIEWS,
+  type AppState,
+  type MotionPreference,
+  type View,
+} from './state/app-state';
 import {
   doneKey,
   draftFor,
@@ -39,8 +47,30 @@ import { usableLocalStorage } from './storage/memory-storage';
 import type { DataSnapshot, Rating, SessionRun, SoundNote, StorageAdapter } from './storage/types';
 import { announce, toast } from './ui/feedback';
 import { mount, type SafeHtml } from './ui/html';
+import {
+  ambient,
+  celebrate,
+  countUp,
+  enterView,
+  moveNavPill,
+  pop,
+  revealOnScroll,
+  setMotionPreference,
+  shake,
+  startMouthDemo,
+  swapIn,
+  type MouthDemo,
+} from './ui/motion';
 import { renderChart } from './ui/views/chart';
 import { audioPanelView, noticeView, notebookCountView, statusView } from './ui/views/header';
+import {
+  DEMO_SOUNDS,
+  homeCtaView,
+  homePathView,
+  homeRecordingsStat,
+  homeView,
+  homeVoicesView,
+} from './ui/views/home';
 import { lessonHeadView, pathSummaryView, pathView } from './ui/views/lesson';
 import {
   dueView,
@@ -89,13 +119,15 @@ export function startApp(): AppHandle {
   const prefs = loadPrefs(browser);
   const store = createStore<AppState>(
     initialState({
-      view: parseView(location.hash) ?? 'today',
+      view: parseView(location.hash) ?? 'home',
       lesson: prefs.lesson ?? suggestedLesson([]),
       lessonPinned: prefs.lesson != null,
       drafts: loadDrafts(browser),
       audio: { recordings: prefs.recordings, phase: 'loading', count: 0 },
+      motion: prefs.motion,
     }),
   );
+  setMotionPreference(prefs.motion);
   const controller = new AbortController();
   const { signal } = controller;
   let adapter: StorageAdapter | null = null;
@@ -186,6 +218,9 @@ export function startApp(): AppHandle {
   /* ---------- Rendering ---------- */
 
   let draftTimer: number | undefined;
+  let pillView: View | null = null;
+  let mouthDemo: MouthDemo | null = null;
+  let stopReveal: () => void = () => {};
   const regions: Region[] = [
     {
       selector: 'main',
@@ -198,13 +233,66 @@ export function startApp(): AppHandle {
         document.querySelectorAll<HTMLElement>('.nav-item').forEach((tab) => {
           tab.setAttribute('aria-current', tab.dataset.view === s.view ? 'page' : 'false');
         });
-        if (s.view !== 'practice' && s.view !== 'sounds') audio.stop();
+        if (s.view !== 'practice' && s.view !== 'sounds' && s.view !== 'home') audio.stop();
+        const section = document.getElementById(`view-${s.view}`);
+        if (section) {
+          enterView(section);
+          if (s.view === 'progress') countUp(section);
+        }
       },
+    },
+    {
+      selector: '.nav',
+      deps: (s) => [s.view, s.layoutTick],
+      effect: (el, s) => {
+        moveNavPill(el, pillView === s.view);
+        pillView = s.view;
+      },
+    },
+    {
+      // The homepage is static and rendered once; its live parts are the regions below.
+      selector: '#home',
+      deps: () => [],
+      view: () => homeView(),
+      effect: (el) => {
+        stopReveal();
+        stopReveal = revealOnScroll(el);
+        const stats = el.querySelector('.home-stats');
+        if (stats && typeof IntersectionObserver !== 'undefined') {
+          const seen = new IntersectionObserver((entries) => {
+            if (entries.some((e) => e.isIntersecting)) {
+              seen.disconnect();
+              countUp(stats);
+            }
+          });
+          seen.observe(stats);
+        }
+        mouthDemo?.stop();
+        const demo = el.querySelector<HTMLElement>('#mouth-demo');
+        if (demo) mouthDemo = startMouthDemo(demo, DEMO_SOUNDS, () => markRecordings(demo));
+      },
+    },
+    { selector: '#home-cta', deps: (s) => [s.runs], view: homeCtaView },
+    { selector: '#home-cta-end', deps: (s) => [s.runs], view: homeCtaView },
+    {
+      selector: '#home-rec',
+      deps: (s) => [s.audio.phase, s.audio.count],
+      view: homeRecordingsStat,
+    },
+    { selector: '#home-path', deps: (s) => [s.runs], view: homePathView },
+    {
+      selector: '#home-voices',
+      deps: (s) => [s.audio.phase, s.audio.count],
+      view: (s) => homeVoicesView(s, new Set(audio.credits().map(([, r]) => r.author)).size),
     },
     { selector: '#status', deps: (s) => [s.storage], view: statusView },
     { selector: '#storage-notice', deps: (s) => [s.storage.notice], view: noticeView },
     { selector: '#nb-count', deps: (s) => [s.notes.length], view: notebookCountView },
-    { selector: '#audio-panel', deps: (s) => [s.speech, s.audio], view: audioPanelView },
+    {
+      selector: '#audio-panel',
+      deps: (s) => [s.speech, s.audio, s.motion],
+      view: audioPanelView,
+    },
     {
       selector: '#today',
       // Drafts change on every keystroke in a lesson; only follow them while Today is shown.
@@ -212,7 +300,14 @@ export function startApp(): AppHandle {
       view: todayView,
     },
     { selector: '#sound-chart', deps: (s) => [s.runs, s.notes, s.sound], view: soundChartView },
-    { selector: '#sound-detail', deps: (s) => [s.runs, s.notes, s.sound], view: soundDetailView },
+    {
+      selector: '#sound-detail',
+      deps: (s) => [s.runs, s.notes, s.sound],
+      view: soundDetailView,
+      effect: (el, s) => {
+        if (s.view === 'sounds') swapIn(el);
+      },
+    },
     { selector: '#path', deps: (s) => [s.lesson, s.runs], view: pathView },
     { selector: '#path-summary', deps: (s) => [s.lesson], view: pathSummaryView },
     {
@@ -289,17 +384,20 @@ export function startApp(): AppHandle {
     },
     {
       selector: 'body',
-      deps: (s) => [s.lesson, s.lessonPinned, s.speech.selected, s.audio.recordings],
+      deps: (s) => [s.lesson, s.lessonPinned, s.speech.selected, s.audio.recordings, s.motion],
       effect: (_el, s) =>
         savePrefs(browser, {
           lesson: s.lessonPinned ? s.lesson : null,
           voice: chosenVoice,
           recordings: s.audio.recordings,
+          motion: s.motion,
         }),
     },
   ];
 
   const memo = new Map<Region, { el: Element; deps: readonly unknown[] }>();
+  // Each region's running diagram animations, stopped before the region is rendered again.
+  const loops = new Map<Region, () => void>();
   function render(s: AppState): void {
     for (const region of regions) {
       const el = document.querySelector<HTMLElement>(region.selector);
@@ -312,8 +410,10 @@ export function startApp(): AppHandle {
       if (previous && previous.el === el && shallowEqual(previous.deps, deps)) continue;
       memo.set(region, { el, deps });
       if (region.view) {
+        loops.get(region)?.();
         mount(el, region.view(s));
         markRecordings(el);
+        loops.set(region, ambient(el));
       }
       region.effect?.(el, s);
     }
@@ -392,6 +492,8 @@ export function startApp(): AppHandle {
     const banner = document.querySelector<HTMLElement>('#steps .banner');
     banner?.scrollIntoView?.({ block: 'start', behavior: scrollBehavior() });
     focus('#steps .banner button');
+    if (rating >= 3) celebrate(banner);
+    else pop(banner);
   }
 
   /**
@@ -423,6 +525,12 @@ export function startApp(): AppHandle {
   }
 
   const actions: Record<string, (el: HTMLElement) => void | Promise<void>> = {
+    'demo-sound': (el) => {
+      const key = el.dataset.sound;
+      if (!isSoundKey(key)) return;
+      mouthDemo?.show(key);
+      audio.say(soundByKey(key).keyword, { rate: 0.8 });
+    },
     'pick-lesson': (el) => {
       if (!selectLesson(el.dataset.lesson)) return;
       const head = document.getElementById('lesson-head');
@@ -469,6 +577,7 @@ export function startApp(): AppHandle {
       const step = el.dataset.step as StepId;
       audio.stop();
       updateDraft(store.get().lesson, (d) => ({ done: { ...d.done, [step]: true } }));
+      pop(document.querySelector(`[data-key="sum-${step}"] .num`));
       const summary = document.querySelector<HTMLElement>('#steps details[open] > summary');
       summary?.focus({ preventScroll: true });
       summary?.parentElement?.scrollIntoView?.({ block: 'nearest', behavior: scrollBehavior() });
@@ -503,6 +612,8 @@ export function startApp(): AppHandle {
       store.set({ quiz: answerRound(quiz, el.dataset.v ?? '') });
       announce(quizAnnouncement(store.get()));
       focus('[data-key="q-next"]');
+      pop(document.querySelector('#quiz .q-opt.correct'));
+      shake(document.querySelector('#quiz .q-opt.wrong'));
     },
     'q-next': () => {
       const quiz = store.get().quiz;
@@ -745,6 +856,18 @@ export function startApp(): AppHandle {
         speech.selectVoice(t.value);
         return;
       }
+      if (t instanceof HTMLSelectElement && t.id === 'motion-sel') {
+        const motion = (MOTION_PREFERENCES as readonly string[]).includes(t.value)
+          ? (t.value as MotionPreference)
+          : 'system';
+        setMotionPreference(motion);
+        store.set({ motion });
+        // Render everything again, so animations start (or stop) on the page as it is.
+        memo.clear();
+        render(store.get());
+        announce(`Animations ${motion === 'system' ? 'follow your system setting' : motion}.`);
+        return;
+      }
       if (!(t instanceof HTMLInputElement)) return;
       if (t.id === 'rec-toggle') {
         audio.setRecordings(t.checked);
@@ -887,6 +1010,16 @@ export function startApp(): AppHandle {
     widePath.addEventListener?.('change', syncPath, { signal });
   }
 
+  window.matchMedia?.('(prefers-reduced-motion: reduce)').addEventListener?.(
+    'change',
+    () => {
+      setMotionPreference(store.get().motion);
+      memo.clear();
+      render(store.get());
+    },
+    { signal },
+  );
+
   const soundSelect = document.getElementById('nf-sound');
   if (soundSelect) {
     const first: SoundKey = getLesson(store.get().lesson)?.sounds[0] ?? 'th-voiceless';
@@ -895,6 +1028,10 @@ export function startApp(): AppHandle {
 
   store.subscribe((s) => render(s));
   render(store.get());
+  // The navigation pill is measured from the items; measure again once web fonts are in.
+  void document.fonts?.ready.then(() => {
+    if (!signal.aborted) store.set((s) => ({ layoutTick: s.layoutTick + 1 }));
+  });
   speech.init();
   const audioReady = audio.load();
 
@@ -913,6 +1050,9 @@ export function startApp(): AppHandle {
     audioReady,
     destroy() {
       controller.abort();
+      mouthDemo?.stop();
+      stopReveal();
+      loops.forEach((stop) => stop());
       unsubscribeStorage?.();
       audio.stop();
       flushDrafts();

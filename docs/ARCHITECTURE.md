@@ -18,10 +18,19 @@ services/  ──────────┴─────────┘
 | `storage/`  | Persistence adapters behind one `StorageAdapter` interface.                                          | `domain/validation`   |
 | `state/`    | Observable store, app state shape, drafts, preferences.                                              | `domain/`             |
 | `services/` | `audio.ts` plays word recordings and falls back to `speech.ts`, the browser’s speech synthesis.      | `state/` types        |
-| `ui/`       | Escaping HTML templates, components and views. Views are pure functions of state.                    | `domain/`, `content/` |
+| `ui/`       | Escaping HTML templates, components and views (pure functions of state), illustrations and motion.   | `domain/`, `content/` |
 | `app.ts`    | Wires it all: regions, actions, events, boot.                                                        | everything            |
 
 `domain/` and `content/` never touch the DOM or storage, which keeps them simple to test.
+
+## Illustrations and motion
+
+- `ui/illustrations.ts` draws every picture as SVG from numbers. A mouth shape is an `Articulation`: tongue points (tip, blade, body, back), jaw, lips, rounding, lip tuck, soft palate, voicing, airflow and the highlighted spot. Consonants take their shape from their place of articulation; vowels from their position on the vowel chart (front–back, high–low), with rounding for the back vowels. `mouthParts()` turns a shape into path data, with the tongue as a smooth curve through its points.
+- Because shapes are numbers, `mixArticulation()` can blend two of them, and `updateMouth()` updates a drawn diagram in place. That is how the homepage mouth morphs between sounds.
+- Pictures use classes only (colors are theme tokens in `styles/art.css`), never style attributes, so the Content-Security-Policy holds. Tests check this for every sound.
+- `ui/motion.ts` wraps [Motion](https://motion.dev)'s `animate`, `inView` and `stagger`. Its rules: content is visible without animation (animations start from a state Motion sets and always end visible, so a re-render never leaves anything hidden); reduced motion means no movement; without the Web Animations API (tests, old browsers) everything is a no-op; and no animation error can break the app.
+- What animates: view changes (`enterView`, from the `main` region), scroll reveals for `data-reveal` (Home), the navigation pill (`.nav` region), count-ups for `data-count`, meters, swapping the Sounds panel, quiz feedback (`pop`, `shake`), the finished-lesson `celebrate` burst and toasts. Diagram loops (airflow, buzzing, pulse) run through `ambient()` only while a diagram is on screen; each region stops its loops before it is rendered again.
+- The learner's **Animations** setting (`system`, `on`, `off`) is saved with the preferences. `setMotionPreference()` applies it and mirrors the result on `<html data-motion>`, which CSS uses for press feedback. Changing it renders every region again, so animations start or stop at once.
 
 ## Course model
 
@@ -58,7 +67,7 @@ AudioService.say(text)
 ## Safety
 
 - **HTML:** `html` tagged templates escape every interpolated value. Only `raw()` bypasses escaping, and it’s used only for constant SVG icons and chart geometry built from numbers.
-- **CSP:** production builds include `default-src 'self'` with no inline scripts or styles. Dynamic sizes are applied through CSS custom properties set from script (`data-pct`), which the policy allows.
+- **CSP:** production builds include `default-src 'self'` with no inline scripts or styles. Dynamic sizes and positions are applied through CSS custom properties set from script (`data-pct`, `data-x`/`data-y`), and animations run through the Web Animations API and the CSSOM, all of which the policy allows.
 - **Stored data is untrusted.** Every adapter runs records through `domain/validation.ts`, which drops invalid records and clamps values. The recordings manifest gets the same treatment.
 
 ## Storage

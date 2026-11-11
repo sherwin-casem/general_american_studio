@@ -3,7 +3,7 @@
    Built assets (content-hashed) and fonts: cache first.
    Word recordings: cached the first time they play, in a cache that survives app updates.
    Bump VERSION to drop old app caches after a release; bump AUDIO only when recordings change. */
-const VERSION = 'gas-v3.0.0';
+const VERSION = 'gas-v3.1.0';
 const AUDIO = 'gas-audio-v1';
 const SHELL = ['./', './index.html', './manifest.webmanifest', './icon.svg'];
 
