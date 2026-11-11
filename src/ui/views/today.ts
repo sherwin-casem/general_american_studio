@@ -30,6 +30,7 @@ import { draftFor } from '../../state/drafts';
 import { formatDate, plural } from '../format';
 import { html, type SafeHtml } from '../html';
 import { ICONS } from '../icons';
+import { soundFigure } from '../illustrations';
 import { symbolChips } from './lesson';
 
 function stepsDone(s: AppState, lesson: Lesson): number {
@@ -57,7 +58,9 @@ function heroView(s: AppState): SafeHtml {
   }
   const done = stepsDone(s, lesson);
   const unit = unitOf(lesson.id);
-  return html`<section class="hero" aria-labelledby="hero-title">
+  const first = lesson.sounds[0];
+  return html`<section class="hero has-figure" aria-labelledby="hero-title">
+    ${first ? html`<figure class="hero-figure">${soundFigure(first)}</figure>` : ''}
     <div class="hero-top">
       <div class="grow">
         <span class="eyebrow"

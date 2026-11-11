@@ -32,6 +32,24 @@
   --hero-chip: #ffffff2b;
   --hero-btn-ink: #1d2f99;
   --shadow-sm: 0 1px 2px #161d330f;
+  --shadow-lg: 0 2px 4px #161d330d, 0 24px 60px #2346c41f;
+
+  /* Diagrams */
+  --md-skin: #e9edf6;
+  --md-line: #9aa3bb;
+  --md-nasal: #dde5f7;
+  --md-cavity: #f8dfe5;
+  --md-tongue: #e2738f;
+  --md-tongue-edge: #bf4f6d;
+  --md-lip: #e69cab;
+  --md-tooth: #ffffff;
+  --md-tooth-edge: #b4bcd0;
+  --md-tissue: #c96b84;
+  --md-air: #2346c4;
+  --md-focus: #f29b0b;
+  --md-buzz: #6b3fb8;
+  --glow-a: #5b7bff40;
+  --glow-b: #a35cff33;
 
   --f-display: 'Bricolage Grotesque Variable', 'Avenir Next', 'Segoe UI', system-ui, sans-serif;
   --f-body: 'Atkinson Hyperlegible', 'Segoe UI', system-ui, -apple-system, sans-serif;
@@ -75,6 +93,22 @@
     --hero-chip: #ffffff24;
     --hero-btn-ink: #1d2f99;
     --shadow-sm: 0 1px 2px #00000066;
+    --shadow-lg: 0 2px 4px #00000059, 0 24px 60px #00000080;
+    --md-skin: #1f2638;
+    --md-line: #5a647e;
+    --md-nasal: #252e45;
+    --md-cavity: #3a2330;
+    --md-tongue: #df6e8a;
+    --md-tongue-edge: #f4a2b6;
+    --md-lip: #b55f74;
+    --md-tooth: #e8ecf5;
+    --md-tooth-edge: #8790a8;
+    --md-tissue: #d77f96;
+    --md-air: #8da5ff;
+    --md-focus: #fbbf24;
+    --md-buzz: #c6a8ff;
+    --glow-a: #5b7bff33;
+    --glow-b: #a35cff2b;
   }
 }
 
@@ -109,4 +143,20 @@
   --hero-chip: #ffffff24;
   --hero-btn-ink: #1d2f99;
   --shadow-sm: 0 1px 2px #00000066;
+  --shadow-lg: 0 2px 4px #00000059, 0 24px 60px #00000080;
+  --md-skin: #1f2638;
+  --md-line: #5a647e;
+  --md-nasal: #252e45;
+  --md-cavity: #3a2330;
+  --md-tongue: #df6e8a;
+  --md-tongue-edge: #f4a2b6;
+  --md-lip: #b55f74;
+  --md-tooth: #e8ecf5;
+  --md-tooth-edge: #8790a8;
+  --md-tissue: #d77f96;
+  --md-air: #8da5ff;
+  --md-focus: #fbbf24;
+  --md-buzz: #c6a8ff;
+  --glow-a: #5b7bff33;
+  --glow-b: #a35cff2b;
 }

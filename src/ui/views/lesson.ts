@@ -26,6 +26,7 @@ import { draftFor } from '../../state/drafts';
 import { plural } from '../format';
 import { html, type SafeHtml } from '../html';
 import { ICONS } from '../icons';
+import { unitArt } from '../illustrations';
 
 export function symbolChips(lesson: Lesson, limit = 4): SafeHtml {
   const symbols = lessonSymbols(lesson);
@@ -50,7 +51,7 @@ export function pathView(s: AppState): SafeHtml {
     const done = unit.lessons.filter((l) => lessonStatus(s.runs, l.id) === 'passed').length;
     return html`<details class="unit" ${unit.key === openUnit ? ' open' : ''}>
       <summary data-key="unit-${unit.key}">
-        <span class="unit-name">${unit.name}</span
+        <span class="unit-art">${unitArt(unit.key)}</span><span class="unit-name">${unit.name}</span
         ><span class="unit-count">${done}/${unit.lessons.length}</span>${ICONS.chevron}
       </summary>
       <ol class="lessons">

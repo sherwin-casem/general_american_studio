@@ -15,15 +15,25 @@ A pronunciation practice app for every sound of General American English. A path
 
 Each lesson has six steps you can repeat: warm-up, meet the sounds, hear the difference (minimal pairs and an ear test), tongue twister, shadowing, and rate-and-note.
 
-The app has five views:
+The app has six views:
 
+- **Home:** what the app teaches, with a mouth diagram that moves from sound to sound, a vowel map you can tap to hear, the eight units with your progress, and a button to start or continue.
 - **Today:** the next lesson, this week’s plan (two lessons a week), and what to review: notebook sounds due for a check-in and lessons rated below 3.
-- **Sounds:** a chart of every sound, grouped by how it is made. Select one to see how to make it, its spellings and example words, and the lesson that practices it.
+- **Sounds:** a chart of every sound, grouped by how it is made. Select one to see a mouth diagram (and the vowel chart, for vowels), how to make it, its spellings and example words, and the lesson that practices it.
 - **Lessons:** the path, and the six steps of the open lesson.
 - **Notebook:** log difficult sounds and check in weekly to see them improve.
 - **Progress:** stats, clarity over time, the lesson map, session history, backups and audio credits.
 
-It is built with TypeScript and Vite, with no runtime framework.
+It is built with TypeScript and Vite, with no UI framework. Animations use [Motion](https://motion.dev) (the library formerly called Framer Motion) through its framework-free API.
+
+## Pictures and animation
+
+- **Mouth diagrams.** Every consonant and vowel has a cross-section of the mouth, drawn in code (`src/ui/illustrations.ts`). It shows the tongue, the lips, the soft palate (lowered for M, N and NG, so air flows through the nose), the airflow, the spot where the sound is made, and the vocal folds: buzzing for voiced sounds, open for voiceless ones. Gliding vowels show where the tongue ends as a dashed outline. The diagrams appear on Home, in the Sounds panel and in each lesson's "Meet the sounds" step.
+- **Vowel chart.** Vowels are plotted by tongue position (front or back, high or low), with arrows for the gliding vowels.
+- **Animation.** Pages fade in, sections rise into view as you scroll, the navigation highlight slides, numbers count up, meters fill, ear-test answers spring or shake, and a finished lesson ends with a burst of sound symbols. On the diagrams, the air moves, voiced sounds buzz, and the homepage mouth morphs from sound to sound.
+- **Reduced motion.** Animations follow the system setting by default: if your system asks for reduced motion (on Windows, _Show animations in Windows_ turned off), nothing moves. **Settings → Animations** can turn them on or off for this app.
+
+Everything is SVG and CSS with theme colors, so it works offline, in light and dark mode, and under the strict Content-Security-Policy (no inline styles: Motion animates through the Web Animations API and the CSSOM, which the policy allows).
 
 ## Getting started
 
@@ -39,7 +49,7 @@ npm run dev
 
 ## Audio: real American speakers
 
-Single words are played from **real recordings of American English speakers**. They are the US pronunciations on [Wikimedia Commons](https://commons.wikimedia.org), mostly recorded for Wiktionary and shared under free licenses. Words with a recording show a small green speaker badge. The Voice and audio panel can turn recordings off.
+Single words are played from **real recordings of American English speakers**. They are the US pronunciations on [Wikimedia Commons](https://commons.wikimedia.org), mostly recorded for Wiktionary and shared under free licenses. Words with a recording show a small green speaker badge. The Settings panel can turn recordings off.
 
 Sentences (twisters, shadowing scripts, tone questions) have no ready-made recordings, so they use the best American voice on the device. The app picks neural voices first: Microsoft Edge’s “Natural” voices (Aria, Jenny, Ava…) sound far better than the older system voices. Every lesson also links to [YouGlish](https://youglish.com), which plays the same words in real videos.
 
@@ -120,7 +130,7 @@ The content tests (`tests/content.test.ts`) check every lesson: structure, marku
 ## Project structure
 
 ```
-index.html              Page shell: sidebar or tab bar, and the five views
+index.html              Page shell: sidebar or tab bar, and the six views
 public/                 Copied as is: service worker, manifest, icon, recordings
 scripts/fetch-audio.mjs Downloads word recordings from Wikimedia Commons
 src/
@@ -131,8 +141,8 @@ src/
   storage/              Storage adapters (browser, Claude account), backups, errors
   state/                Store, drafts, preferences, app state shape
   services/             Word recordings (audio.ts) and the device voice (speech.ts)
-  ui/                   HTML templating, components, views, chart
-  styles/               Tokens (light and dark), base, components, layout, views
+  ui/                   HTML templating, components, views, chart, illustrations, motion
+  styles/               Tokens (light and dark), base, components, layout, views, art, home
 tests/                  Unit, content and end-to-end tests (Vitest + happy-dom)
 docs/ARCHITECTURE.md    How the pieces fit together
 ```

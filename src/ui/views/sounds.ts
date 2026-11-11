@@ -24,6 +24,7 @@ import { sayButton } from '../components';
 import { plural, youglishUrl } from '../format';
 import { html, type SafeHtml } from '../html';
 import { ICONS } from '../icons';
+import { articulationFor, mouthSvg, soundFigure, vowelChartSvg } from '../illustrations';
 import { formatSpelling } from './practice';
 
 const CHART_KINDS: SoundKind[] = ['consonant', 'vowel', 'skill'];
@@ -84,10 +85,25 @@ export function soundChartView(s: AppState): SafeHtml {
     )}`;
 }
 
+function figureCaption(sound: Sound): SafeHtml {
+  if (sound.kind === 'consonant') {
+    return html`<b>Where:</b> ${sound.place ?? ''}. ${sound.voiced ? 'Voice on: the vocal folds buzz.' : 'Voice off: just air.'}`;
+  }
+  if (sound.kind === 'vowel') {
+    return sound.category === 'diphthong' || sound.category === 'r-colored'
+      ? html`The tongue starts here and glides to the <b>dashed outline</b>.`
+      : html`The dot marks the highest point of the tongue.`;
+  }
+  return html`${CATEGORY_HINTS[sound.category]}`;
+}
+
 export function soundDetailView(s: AppState): SafeHtml {
   if (!s.sound) {
+    const rest = articulationFor('schwa');
     return html`<div class="detail-empty">
-      <span class="big-ipa" aria-hidden="true">/ə/</span>
+      <figure class="sd-figure empty-figure">
+        ${rest ? mouthSvg(rest, { label: 'Mouth diagram at rest' }) : ''}
+      </figure>
       <h2 class="h3" id="sound-detail-title" tabindex="-1">Pick a sound</h2>
       <p>
         Select any sound in the chart to see how to make it, how it’s spelled, and to hear example
@@ -129,7 +145,20 @@ export function soundDetailView(s: AppState): SafeHtml {
         ×
       </button>
     </div>
-    ${sound.place ? html`<p class="place"><b>Where:</b> ${sound.place}</p>` : ''}
+    <div class="sd-figures${sound.kind === 'vowel' ? ' two' : ''}">
+      <figure class="sd-figure">
+        ${soundFigure(sound.key)}
+        <figcaption>${figureCaption(sound)}</figcaption>
+      </figure>
+      ${
+        sound.kind === 'vowel'
+          ? html`<figure class="sd-figure">
+              ${vowelChartSvg(sound.key, `Vowel chart with ${sound.name} highlighted`)}
+              <figcaption>Where it sits among the vowels</figcaption>
+            </figure>`
+          : ''
+      }
+    </div>
     ${
       card
         ? html`<h3 class="lbl">How to make it</h3>

@@ -100,6 +100,17 @@ describe('drafts', () => {
 });
 
 describe('prefs', () => {
+  it('keeps a valid animation setting and falls back to the system for anything else', () => {
+    const storage = window.localStorage;
+    storage.setItem(PREF_KEYS.prefs, JSON.stringify({ lesson: 'p-b', motion: 'on' }));
+    expect(loadPrefs(storage).motion).toBe('on');
+    storage.setItem(PREF_KEYS.prefs, JSON.stringify({ lesson: 'p-b', motion: 'sometimes' }));
+    expect(loadPrefs(storage).motion).toBe('system');
+    storage.setItem(PREF_KEYS.prefs, JSON.stringify({ lesson: 'p-b' }));
+    expect(loadPrefs(storage).motion).toBe('system');
+    storage.clear();
+  });
+
   it('reads version 1 keys', () => {
     const storage = new MemoryStorage();
     storage.setItem(PREF_KEYS.legacyWeek, '4');
@@ -108,6 +119,7 @@ describe('prefs', () => {
       lesson: 'american-t',
       voice: 'voice-1',
       recordings: true,
+      motion: 'system',
     });
   });
 
@@ -122,12 +134,22 @@ describe('prefs', () => {
   it('rejects unknown lessons and bad values', () => {
     const storage = new MemoryStorage();
     storage.setItem(PREF_KEYS.prefs, JSON.stringify({ lesson: 'nope', voice: 7 }));
-    expect(loadPrefs(storage)).toEqual({ lesson: null, voice: null, recordings: true });
+    expect(loadPrefs(storage)).toEqual({
+      lesson: null,
+      voice: null,
+      recordings: true,
+      motion: 'system',
+    });
   });
 
   it('remembers turning recordings off', () => {
     const storage = new MemoryStorage();
     storage.setItem(PREF_KEYS.prefs, JSON.stringify({ lesson: 'p-b', recordings: false }));
-    expect(loadPrefs(storage)).toEqual({ lesson: 'p-b', voice: null, recordings: false });
+    expect(loadPrefs(storage)).toEqual({
+      lesson: 'p-b',
+      voice: null,
+      recordings: false,
+      motion: 'system',
+    });
   });
 });

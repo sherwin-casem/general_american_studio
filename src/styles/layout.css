@@ -20,6 +20,12 @@
   gap: 12px;
   min-width: 0;
   flex: 1 1 auto;
+  color: inherit;
+  text-decoration: none;
+  border-radius: 12px;
+}
+.brand:hover .brand-name {
+  color: var(--accent);
 }
 .brand-mark {
   font-family: var(--f-ipa);
@@ -136,7 +142,7 @@
   background: var(--bad);
 }
 
-/* Voice and audio settings */
+/* Settings: voice, audio and animations */
 .settings {
   flex: 1 1 auto;
   max-width: 100%;

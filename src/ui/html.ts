@@ -87,8 +87,13 @@ export function mount(el: Element, content: SafeHtml): void {
 }
 
 export function applyDynamicSizes(root: ParentNode): void {
+  const percent = (value: string | undefined) => Math.max(0, Math.min(100, Number(value) || 0));
   root.querySelectorAll<HTMLElement>('[data-pct]').forEach((node) => {
-    const pct = Math.max(0, Math.min(100, Number(node.dataset.pct) || 0));
-    node.style.setProperty('--pct', `${pct}%`);
+    node.style.setProperty('--pct', `${percent(node.dataset.pct)}%`);
+  });
+  // Positions as numbers from 0 to 100, for elements placed over a picture (the vowel chart).
+  root.querySelectorAll<HTMLElement>('[data-x][data-y]').forEach((node) => {
+    node.style.setProperty('--x', String(percent(node.dataset.x)));
+    node.style.setProperty('--y', String(percent(node.dataset.y)));
   });
 }

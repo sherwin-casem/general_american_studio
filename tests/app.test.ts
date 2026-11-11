@@ -86,6 +86,14 @@ beforeEach(() => {
   );
   // happy-dom can't play audio; pretend MP3 and Ogg are supported, as in real browsers.
   vi.spyOn(HTMLMediaElement.prototype, 'canPlayType').mockReturnValue('maybe');
+  // Reduced motion: no animations, so every number and position is final straight away.
+  // Animations have their own tests in motion.test.ts.
+  vi.stubGlobal('matchMedia', (query: string) => ({
+    matches: query.includes('prefers-reduced-motion: reduce'),
+    media: query,
+    addEventListener: () => {},
+    removeEventListener: () => {},
+  }));
 });
 
 afterEach(() => {
@@ -94,13 +102,49 @@ afterEach(() => {
 });
 
 describe('General American Studio', () => {
-  it('opens on Today with the first lesson up next and browser storage', async () => {
+  it('opens on the homepage, with Today one click away', async () => {
     await boot();
-    expect(visible('today')).toBe(true);
-    expect(visible('practice')).toBe(false);
-    expect(el('#hero-title').textContent).toBe(FIRST.title);
+    expect(visible('home')).toBe(true);
+    expect(visible('today')).toBe(false);
+    expect(el('[data-view="home"]').getAttribute('aria-current')).toBe('page');
+    expect(el('#home-cta').textContent).toContain('Start the first lesson');
     expect(el('#status').textContent).toContain('Saved in this browser');
+
+    await goTo('today');
+    expect(visible('today')).toBe(true);
+    expect(el('#hero-title').textContent).toBe(FIRST.title);
     expect(el('[data-view="today"]').getAttribute('aria-current')).toBe('page');
+  });
+
+  it('lets the learner turn animations on, and remembers it', async () => {
+    await boot();
+    expect(el('#audio-panel').textContent).toContain('Your system asks for reduced motion');
+    const select = el<HTMLSelectElement>('#motion-sel');
+    select.value = 'on';
+    select.dispatchEvent(new Event('change', { bubbles: true }));
+    await settle();
+    expect(document.documentElement.dataset.motion).toBe('on');
+    expect(JSON.parse(localStorage.getItem('gas:v2:prefs') ?? '{}').motion).toBe('on');
+    expect(el<HTMLSelectElement>('#motion-sel').value).toBe('on');
+    // The homepage is rendered again, and still works.
+    expect(document.querySelectorAll('#home-path .unit-card')).toHaveLength(8);
+  });
+
+  it('shows the homepage diagram, vowel map and units, and starts a lesson from it', async () => {
+    await boot();
+    expect(document.querySelector('#mouth-demo svg.mouth')).not.toBeNull();
+    expect(document.querySelectorAll('#home .vc-spot').length).toBeGreaterThanOrEqual(10);
+    expect(document.querySelectorAll('#home-path .unit-card')).toHaveLength(8);
+    expect(el('#home-rec').textContent).toContain('1');
+
+    await click('[data-action="demo-sound"][data-sound="r"]');
+    expect(el('[data-demo="name"]').textContent).toBe('R as in red');
+    expect(el('[data-demo="say"]').dataset.say).toBe('red');
+    expect(el('[data-sound="r"]').getAttribute('aria-pressed')).toBe('true');
+
+    await click('#home-cta [data-action="go-lesson"]');
+    expect(visible('practice')).toBe(true);
+    expect(el('#lesson-head .lh-title').textContent).toBe(FIRST.title);
   });
 
   it('starts the lesson from Today and shows the whole path', async () => {

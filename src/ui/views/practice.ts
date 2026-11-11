@@ -25,6 +25,7 @@ import { ratingButtons, sayButton, sayMarkup, stressWord } from '../components';
 import { youglishUrl } from '../format';
 import { html, type SafeHtml } from '../html';
 import { ICONS } from '../icons';
+import { soundFigure } from '../illustrations';
 
 /** Slower model speed for single sounds, closer to natural for stress and melody. */
 export function slowRate(lesson: Lesson): number {
@@ -138,6 +139,7 @@ function warmupBody(lesson: Lesson): SafeHtml {
 export function soundCardView(card: SoundCard): SafeHtml {
   const first = card.words[0]?.[0] ?? '';
   return html`<div class="sound">
+    <figure class="sc-figure">${soundFigure(card.sound)}</figure>
     <div class="sound-head">
       <span class="big-ipa">/${card.ipa}/</span>
       <div>

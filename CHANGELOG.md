@@ -1,5 +1,20 @@
 # Changelog
 
+## 3.1.0 – 2026-11-11
+
+A homepage, pictures of every sound, and animation.
+
+### Added
+
+- **Homepage.** A new first page: a mouth diagram that morphs from sound to sound (pick one to hear it), the course in numbers, how a lesson works, a vowel map you can tap to hear, the eight units with your progress, sample words by real speakers, and a button to start or continue. The logo links to it, and it is the first item in the sidebar.
+- **Mouth diagrams for every sound.** Cross-sections drawn in code show the tongue, lips, soft palate, airflow, voicing and where each sound is made. They appear on Home, in the Sounds panel (with the vowel chart for vowels) and in each lesson's sound cards. The Today hero shows the next lesson's first sound, and each unit has a small picture.
+- **Animation**, with [Motion](https://motion.dev) (formerly Framer Motion): page transitions, scroll reveals, a sliding navigation highlight, count-ups, filling meters, quiz feedback, a celebration when you pass a lesson, animated toasts, and moving airflow and buzzing vocal folds on the diagrams.
+- **Settings → Animations:** follow the system's reduced-motion setting (the default), or turn animations on or off for this app.
+
+### Changed
+
+- The app opens on Home; Today is one click away. The "Voice and audio" panel is now "Settings".
+
 ## 3.0.0 – 2026-11-09
 
 Every sound of General American, real speakers, and a new design. Saved progress, notes, drafts and backups from earlier versions are migrated automatically.

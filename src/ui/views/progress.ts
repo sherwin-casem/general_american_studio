@@ -29,17 +29,17 @@ export function statsView(s: AppState): SafeHtml {
   const streak = weeklyStreak(s.runs);
   const comfortable = s.notes.filter((n) => noteLevel(n) === 3).length;
   return html` <div class="stat">
-      <b>${passed}<span class="of"> / ${TOTAL_LESSONS}</span></b
+      <b><span data-count="${passed}">${passed}</span><span class="of"> / ${TOTAL_LESSONS}</span></b
       ><span>lessons passed</span>
     </div>
     <div class="stat">
-      <b>${s.runs.length}</b><span>sessions logged · ${totalMinutes(s.runs)} min</span>
+      <b data-count="${s.runs.length}">${s.runs.length}</b><span>sessions logged · ${totalMinutes(s.runs)} min</span>
     </div>
     <div class="stat">
-      <b>${streak}</b><span>${streak === 1 ? 'week' : 'weeks'} in a row with practice</span>
+      <b data-count="${streak}">${streak}</b><span>${streak === 1 ? 'week' : 'weeks'} in a row with practice</span>
     </div>
     <div class="stat">
-      <b>${comfortable}<span class="of"> / ${s.notes.length}</span></b
+      <b><span data-count="${comfortable}">${comfortable}</span><span class="of"> / ${s.notes.length}</span></b
       ><span>notebook sounds now comfortable</span>
     </div>`;
 }

@@ -8,6 +8,8 @@ import './styles/base.css';
 import './styles/components.css';
 import './styles/layout.css';
 import './styles/views.css';
+import './styles/art.css';
+import './styles/home.css';
 
 import { startApp } from './app';
 import { installGlobalErrorHandlers, renderFatalError } from './errors';
